@@ -1,13 +1,19 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const SLIDES = [
+const DEFAULT_SLIDES = [
   '/images/home-hero-family.jpg',
+  '/images/latest-images/1.jpeg',
   '/images/about-students-classroom.jpg',
+  '/images/latest-images/4.jpeg',
   '/images/programs-students-classroom.jpg',
+  '/images/latest-images/2.jpeg',
   '/images/impact-graduation-celebration.jpg',
+  '/images/latest-images/5.jpeg',
+  '/images/latest-images/3.jpeg',
 ];
 
-export default function HeroSlideshow() {
+export default function HeroSlideshow({ slides = DEFAULT_SLIDES }) {
+  const SLIDES = slides;
   const [index, setIndex] = useState(0);
   // Tracks how many times each slide has been activated, so its key changes on
   // every activation — forcing React to remount the node and restart its CSS

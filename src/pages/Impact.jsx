@@ -3,6 +3,19 @@ import { Link } from 'react-router-dom';
 import Reveal from '../components/Reveal.jsx';
 import StatNumber from '../components/StatNumber.jsx';
 import Marquee from '../components/Marquee.jsx';
+import HeroSlideshow from '../components/HeroSlideshow.jsx';
+
+const IMPACT_SLIDES = [
+  '/images/latest-images/3.jpeg',
+  '/images/home-hero-family.jpg',
+  '/images/latest-images/5.jpeg',
+  '/images/programs-students-classroom.jpg',
+  '/images/latest-images/2.jpeg',
+  '/images/about-students-classroom.jpg',
+  '/images/latest-images/4.jpeg',
+  '/images/impact-graduation-celebration.jpg',
+  '/images/latest-images/1.jpeg',
+];
 
 const TESTIMONIALS = [
   {
@@ -36,7 +49,7 @@ export default function Impact() {
   return (
     <>
       <section className="page-header">
-        <div className="hero-bg" style={{ backgroundImage: "url('/images/impact-graduation-celebration.jpg')" }}></div>
+        <HeroSlideshow slides={IMPACT_SLIDES} />
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">

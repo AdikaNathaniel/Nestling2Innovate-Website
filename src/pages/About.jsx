@@ -1,12 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Reveal from '../components/Reveal.jsx';
+import HeroSlideshow from '../components/HeroSlideshow.jsx';
+
+const ABOUT_SLIDES = [
+  '/images/about-students-classroom.jpg',
+  '/images/latest-images/4.jpeg',
+  '/images/impact-graduation-celebration.jpg',
+  '/images/latest-images/1.jpeg',
+  '/images/programs-students-classroom.jpg',
+  '/images/latest-images/5.jpeg',
+  '/images/home-hero-family.jpg',
+  '/images/latest-images/2.jpeg',
+  '/images/latest-images/3.jpeg',
+];
 
 export default function About() {
   return (
     <>
       <section className="page-header">
-        <div className="hero-bg" style={{ backgroundImage: "url('/images/about-students-classroom.jpg')" }}></div>
+        <HeroSlideshow slides={ABOUT_SLIDES} />
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">

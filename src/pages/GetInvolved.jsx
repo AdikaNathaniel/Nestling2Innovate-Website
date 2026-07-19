@@ -1,12 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Reveal from '../components/Reveal.jsx';
+import HeroSlideshow from '../components/HeroSlideshow.jsx';
+
+const GET_INVOLVED_SLIDES = [
+  '/images/impact-graduation-celebration.jpg',
+  '/images/latest-images/5.jpeg',
+  '/images/home-hero-family.jpg',
+  '/images/latest-images/4.jpeg',
+  '/images/about-students-classroom.jpg',
+  '/images/latest-images/1.jpeg',
+  '/images/programs-students-classroom.jpg',
+  '/images/latest-images/3.jpeg',
+  '/images/latest-images/2.jpeg',
+];
 
 export default function GetInvolved() {
   return (
     <>
       <section className="page-header">
-        <div className="hero-bg" style={{ backgroundImage: "url('/images/get-involved-partner-lagos-meeting.jpg')" }}></div>
+        <HeroSlideshow slides={GET_INVOLVED_SLIDES} />
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
