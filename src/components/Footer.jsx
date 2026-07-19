@@ -80,7 +80,7 @@ export default function Footer() {
             <h4>Contact</h4>
             <ul>
               <li className="address-line">
-                Tantra Hills, 2nd Street, behind Champion Divine Clinic,<br />
+                Tantra Hills, 2nd Street, behind Champion Divine Clinic<br />
                 Accra, Ghana
               </li>
               <li><a href="mailto:info@beevif.org">info@beevif.org</a></li>
