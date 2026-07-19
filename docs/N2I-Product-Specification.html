@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nestling 2Innovate — Product Specification</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 18mm;
+    @bottom-center {
+      content: "Nestling 2Innovate (N2I) — Website Product Specification";
+      font-size: 8pt;
+      color: #7a8a99;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+    color: #12313f;
+    margin: 0;
+    line-height: 1.55;
+    font-size: 11pt;
+  }
+  .cover {
+    min-height: 250mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(160deg, #0097b2 0%, #00b4d8 55%, #ffffff 100%);
+    color: #ffffff;
+    padding: 30mm 20mm;
+    page-break-after: always;
+    position: relative;
+  }
+  .cover .tag {
+    background: #ffffff;
+    color: #0097b2;
+    font-weight: 700;
+    font-size: 10pt;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 22px;
+  }
+  .cover h1 {
+    font-size: 34pt;
+    margin: 0 0 6px 0;
+    font-weight: 800;
+    line-height: 1.15;
+  }
+  .cover h2 {
+    font-size: 15pt;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    color: #eafcff;
+  }
+  .cover .meta {
+    font-size: 10.5pt;
+    color: #eafcff;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    padding-top: 14px;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 400px;
+  }
+  .cover .meta div { margin-bottom: 4px; }
+  .cover .org {
+    position: absolute;
+    bottom: 20mm;
+    left: 20mm;
+    font-size: 9.5pt;
+    color: #eafcff;
+    max-width: 140mm;
+  }
+
+  section { page-break-inside: avoid; margin-bottom: 26px; }
+  h2.section-title {
+    color: #0097b2;
+    font-size: 16pt;
+    font-weight: 800;
+    border-bottom: 2.5px solid #00b4d8;
+    padding-bottom: 6px;
+    margin: 0 0 12px 0;
+  }
+  h3.sub-title {
+    color: #0071a3;
+    font-size: 12.5pt;
+    font-weight: 700;
+    margin: 18px 0 6px 0;
+  }
+  p { margin: 0 0 10px 0; }
+  ul, ol { margin: 0 0 10px 0; padding-left: 20px; }
+  li { margin-bottom: 4px; }
+
+  .callout {
+    background: #eafcff;
+    border-left: 4px solid #00b4d8;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin: 10px 0 16px 0;
+    font-size: 10.5pt;
+  }
+
+  .stats-row {
+    display: flex;
+    gap: 12px;
+    margin: 14px 0 18px 0;
+  }
+  .stat-box {
+    flex: 1;
+    background: #f2fcfe;
+    border: 1px solid #bdeef7;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+  .stat-box .num {
+    font-size: 18pt;
+    font-weight: 800;
+    color: #0097b2;
+    display: block;
+  }
+  .stat-box .lbl {
+    font-size: 8.5pt;
+    color: #4d6675;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 18px 0;
+    font-size: 10pt;
+  }
+  th {
+    background: #0097b2;
+    color: #ffffff;
+    text-align: left;
+    padding: 8px 10px;
+    font-weight: 700;
+  }
+  td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #d8eef3;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: #f7fdfe; }
+
+  .tab-card {
+    border: 1px solid #bdeef7;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .tab-card .tab-head {
+    background: linear-gradient(90deg, #0097b2, #00b4d8);
+    color: #ffffff;
+    padding: 9px 14px;
+    font-weight: 700;
+    font-size: 11.5pt;
+  }
+  .tab-card .tab-body {
+    padding: 10px 14px;
+    background: #ffffff;
+  }
+  .tab-card .tab-body ul { margin: 4px 0 0 0; }
+
+  .swatch-row { display: flex; gap: 14px; margin: 10px 0 18px 0; flex-wrap: wrap; }
+  .swatch { text-align: center; font-size: 9pt; color: #33505d; }
+  .swatch .box {
+    width: 70px; height: 44px;
+    border-radius: 6px;
+    border: 1px solid #d8eef3;
+    margin-bottom: 4px;
+  }
+
+  footer.page-footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #d8eef3;
+    font-size: 8.5pt;
+    color: #7a8a99;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="tag">Product Specification</div>
+  <h1>Nestling 2Innovate</h1>
+  <h2>Website Product Specification &amp; Information Architecture</h2>
+  <div class="meta">
+    <div><strong>Prepared for:</strong> Baiden Etsiakoh Eagle Vision Foundation (BEEVIF)</div>
+    <div><strong>Initiative:</strong> Nestling 2Innovate (N2I)</div>
+    <div><strong>Location:</strong> Special Grace Academy Campus, Tantra Hills, Accra, Ghana</div>
+    <div><strong>Date:</strong> 18 July 2026</div>
+    <div><strong>Version:</strong> 1.0</div>
+  </div>
+  <div class="org">Baiden Etsiakoh Eagle Vision Foundation (BEEVIF) — a Ghana-registered charitable foundation</div>
+</div>
+
+<section>
+  <h2 class="section-title">1. Project Overview</h2>
+  <p>
+    The Baiden Etsiakoh Eagle Vision Foundation (BEEVIF) is a Ghana-registered charitable foundation
+    based in Tantra Hills, Accra. Its flagship initiative, <strong>Nestling 2Innovate (N2I)</strong>,
+    delivers STEM, digital skills, and artificial intelligence education to school-age children and
+    out-of-school youth in under-resourced communities.
+  </p>
+  <p>
+    Operating from the Special Grace Academy (SGA) campus, N2I currently serves 172 learners while
+    extending its reach to neighbouring schools and Senior High School (SHS) graduates. Since 2025,
+    the initiative has successfully run four proof-of-concept programs — Web Design, Global Virtual
+    Internships, Programming, and AI Literacy — and produced one of the first
+    <strong>Google Gemini AI Certified (K12)</strong> students in Ghana.
+  </p>
+  <p>
+    N2I is now scaling these pilots into a permanent <strong>Community STEM Innovation Centre</strong>
+    and a structured digital-and-AI skills pipeline, including expanding access to quality education
+    for rural areas with internet constraints.
+  </p>
+
+  <div class="stats-row">
+    <div class="stat-box"><span class="num">172</span><span class="lbl">Learners Served</span></div>
+    <div class="stat-box"><span class="num">4</span><span class="lbl">Proof-of-Concept Programs</span></div>
+    <div class="stat-box"><span class="num">1st</span><span class="lbl">Gemini AI Certified K12 (Ghana)</span></div>
+    <div class="stat-box"><span class="num">2025</span><span class="lbl">Programs Launched</span></div>
+  </div>
+
+  <h3 class="sub-title">Purpose of This Website</h3>
+  <p>
+    The website will serve as the digital home for BEEVIF and N2I — communicating the organisation's
+    mission and story, showcasing programs and impact, and providing clear pathways for learners to
+    apply, volunteers and partners to get involved, and donors to support the Community STEM
+    Innovation Centre and rural access expansion.
+  </p>
+
+  <h3 class="sub-title">Design Direction — Colour Palette</h3>
+  <p>The website will use a <strong>cyan blue and white</strong> palette, conveying clarity, technology, and openness — fitting for a digital/AI education initiative.</p>
+  <div class="swatch-row">
+    <div class="swatch"><div class="box" style="background:#0097b2;"></div>Primary Cyan Blue<br>#0097B2</div>
+    <div class="swatch"><div class="box" style="background:#00b4d8;"></div>Accent Cyan<br>#00B4D8</div>
+    <div class="swatch"><div class="box" style="background:#eafcff; border:1px solid #bdeef7;"></div>Tint / Backgrounds<br>#EAFCFF</div>
+    <div class="swatch"><div class="box" style="background:#ffffff; border:1px solid #d8eef3;"></div>White<br>#FFFFFF</div>
+    <div class="swatch"><div class="box" style="background:#12313f;"></div>Text / Contrast<br>#12313F</div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">2. Site Navigation — Approved Structure</h2>
+  <p>
+    Following review of comparable organisations (Learn2Earn, 48in48, Global Mentorship Initiative),
+    the navigation has been consolidated into <strong>five primary tabs</strong>, each using a
+    dropdown menu to organise related sub-pages. <strong>Donate</strong> and <strong>Contact</strong>
+    are kept as persistent header actions outside the five tabs for maximum visibility.
+  </p>
+
+  <div class="tab-card">
+    <div class="tab-head">1. Home</div>
+    <div class="tab-body">
+      <p>No dropdown. Mission snapshot, key impact stats, and calls-to-action (Apply, Donate, Volunteer).</p>
+    </div>
+  </div>
+
+  <div class="tab-card">
+    <div class="tab-head">2. About</div>
+    <div class="tab-body">
+      <ul>
+        <li><strong>Our Story</strong> — BEEVIF's origin, N2I's relationship to it, the SGA campus and Tantra Hills setting</li>
+        <li><strong>Our Team</strong> — leadership, staff, and key contributors</li>
+        <li><strong>Mission &amp; Vision</strong> — organisational purpose and long-term goals</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tab-card">
+    <div class="tab-head">3. Programs</div>
+    <div class="tab-body">
+      <ul>
+        <li><strong>Web Design</strong></li>
+        <li><strong>Global Virtual Internships</strong></li>
+        <li><strong>Programming</strong></li>
+        <li><strong>AI Literacy</strong></li>
+        <li><strong>Community STEM Innovation Centre</strong> (Coming Soon)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tab-card">
+    <div class="tab-head">4. Get Involved</div>
+    <div class="tab-body">
+      <ul>
+        <li><strong>Apply / Enrol</strong> — for school-age children, out-of-school youth, and SHS graduates</li>
+        <li><strong>Volunteer &amp; Mentor</strong></li>
+        <li><strong>Partner With Us</strong> — corporates, NGOs, and schools</li>
+        <li><strong>Donate</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tab-card">
+    <div class="tab-head">5. Impact</div>
+    <div class="tab-body">
+      <ul>
+        <li><strong>Our Impact</strong> — 172 learners served, first Gemini AI Certified K12 student in Ghana</li>
+        <li><strong>Success Stories / Testimonials</strong></li>
+        <li><strong>News &amp; Updates</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <table>
+    <tr><th>Persistent Header Element</th><th>Purpose</th></tr>
+    <tr><td>Donate (button)</td><td>High-visibility call-to-action, always accessible regardless of page</td></tr>
+    <tr><td>Contact</td><td>Direct access to SGA campus address, email, and social channels</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2 class="section-title">3. Content Summary by Tab</h2>
+  <table>
+    <tr><th>Tab</th><th>Key Content</th></tr>
+    <tr><td>Home</td><td>Hero mission statement, headline stats, program highlights, primary CTAs</td></tr>
+    <tr><td>About</td><td>BEEVIF/N2I story, SGA campus context, team profiles, mission &amp; vision</td></tr>
+    <tr><td>Programs</td><td>Descriptions of the four pilot programs plus the upcoming Innovation Centre</td></tr>
+    <tr><td>Get Involved</td><td>Enrolment pathway, volunteer/mentor sign-up, partnership options, donation</td></tr>
+    <tr><td>Impact</td><td>Learner numbers, certification milestones, testimonials, news</td></tr>
+  </table>
+</section>
+
+<section>
+  <div class="callout">
+    This document reflects the navigation structure agreed upon during the discovery discussion
+    on 18 July 2026 and will guide wireframing and visual design of the N2I website.
+  </div>
+</section>
+
+<footer class="page-footer">
+  Nestling 2Innovate (N2I) — an initiative of the Baiden Etsiakoh Eagle Vision Foundation (BEEVIF) &nbsp;|&nbsp; Special Grace Academy Campus, Tantra Hills, Accra, Ghana
+</footer>
+
+</body>
+</html>
