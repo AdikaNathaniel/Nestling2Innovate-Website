@@ -55,7 +55,8 @@ export default function About() {
           </Reveal>
           <Reveal as="img" variant="right" delay={0.1}
             src="/images/programs-students-classroom.jpg"
-            alt="N2I learners at the Special Grace Academy campus" />
+            alt="N2I learners at the Special Grace Academy campus"
+            style={{ height: '640px' }} />
         </div>
       </section>
 
