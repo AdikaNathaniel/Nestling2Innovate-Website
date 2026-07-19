@@ -94,7 +94,6 @@ export default function About() {
               <img src="/team/samueletsiakohdp.jpg.jpeg" alt="Samuel Etsiakoh" />
               <h3>Samuel Etsiakoh</h3>
               <div className="role">Founder, BEEVIF</div>
-              <p>Leads BEEVIF's mission and the Nestling2Innovate initiative from Accra, Ghana.</p>
             </Reveal>
 
             <Reveal variant="drop" delay={0.12} className="team-card placeholder">
