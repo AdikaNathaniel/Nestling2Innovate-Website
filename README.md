@@ -1,9 +1,9 @@
 ```
 ```
 
-# Nestling 2Innovate (N2I)
+# Nestling2Innovate (N2I)
 
-The official website for **Nestling 2Innovate (N2I)**, the flagship initiative of the **Baiden Etsiakoh Eagle Vision Foundation (BEEVIF)** — a Ghana-registered charitable foundation based in Tantra Hills, Accra. N2I delivers STEM, digital skills, and AI education to school-age children and out-of-school youth in under-resourced communities.
+The official website for **Nestling2Innovate (N2I)**, the flagship initiative of the **Baiden Etsiakoh Eagle Vision Foundation (BEEVIF)** — a Ghana-registered charitable foundation based in Tantra Hills, Accra. N2I delivers STEM, digital skills, and AI education to school-age children and out-of-school youth in under-resourced communities.
 
 ## Tech Stack
 

@@ -23,7 +23,7 @@ export default function About() {
             <h2>The Baiden Etsiakoh Eagle Vision Foundation</h2>
             <p>
               BEEVIF is a Ghana-registered charitable foundation based in Tantra Hills, Accra. Our
-              primary initiative, <strong>Nestling 2Innovate (N2I)</strong>, delivers STEM, digital
+              primary initiative, <strong>Nestling2Innovate (N2I)</strong>, delivers STEM, digital
               skills, and artificial intelligence education to school-age children and out-of-school
               youth in under-resourced communities.
             </p>
@@ -80,7 +80,7 @@ export default function About() {
               <img src="/team/samueletsiakohdp.jpg.jpeg" alt="Samuel Etsiakoh" />
               <h3>Samuel Etsiakoh</h3>
               <div className="role">Founder, BEEVIF</div>
-              <p>Leads BEEVIF's mission and the Nestling 2Innovate initiative from Accra, Ghana.</p>
+              <p>Leads BEEVIF's mission and the Nestling2Innovate initiative from Accra, Ghana.</p>
             </Reveal>
 
             <Reveal variant="drop" delay={0.12} className="team-card placeholder">
