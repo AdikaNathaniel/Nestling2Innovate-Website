@@ -53,7 +53,6 @@ export default function About() {
             alt="Children in a rural community N2I aims to reach" />
           <Reveal variant="left">
             <span className="eyebrow">Mission &amp; Vision</span>
-            <h2>Under-Resourced Doesn't Mean Under-Capable</h2>
             <p>
               <strong>Our mission</strong> is to equip school-age children and out-of-school youth in
               under-resourced Ghanaian communities with the STEM, digital, and AI skills they need to
