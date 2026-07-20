@@ -96,20 +96,16 @@ export default function About() {
               <div className="role">Founder, BEEVIF</div>
             </Reveal>
 
-            <Reveal variant="drop" delay={0.12} className="team-card placeholder">
-              <img src="/images/team-leadership-man.jpg" alt="Placeholder photo for a future team member" />
-              <h3>Team Member Name</h3>
-              <div className="role">Role / Title</div>
-              <p>Placeholder — replace with a real team photo and bio.</p>
-              <span className="note">Placeholder photo</span>
+            <Reveal variant="drop" delay={0.12} className="team-card">
+              <img src="/team/mawunyo-kwasi-kutor.jpeg" alt="Mawunyo Kwasi Kutor" />
+              <h3>Mawunyo Kwasi Kutor</h3>
+              <div className="role">Digital Skills Trainer</div>
             </Reveal>
 
-            <Reveal variant="drop" delay={0.24} className="team-card placeholder">
-              <img src="/images/team-leadership-woman.jpg" alt="Placeholder photo for a future team member" />
-              <h3>Team Member Name</h3>
-              <div className="role">Role / Title</div>
-              <p>Placeholder — replace with a real team photo and bio.</p>
-              <span className="note">Placeholder photo</span>
+            <Reveal variant="drop" delay={0.24} className="team-card">
+              <img src="/team/nathaniel-adika.jpeg" alt="Nathaniel Adika" />
+              <h3>Nathaniel Adika</h3>
+              <div className="role">Digital Skills Trainer</div>
             </Reveal>
           </div>
         </div>
