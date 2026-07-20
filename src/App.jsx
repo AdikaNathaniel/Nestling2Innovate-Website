@@ -8,6 +8,7 @@ import About from './pages/About.jsx';
 import Programs from './pages/Programs.jsx';
 import GetInvolved from './pages/GetInvolved.jsx';
 import Impact from './pages/Impact.jsx';
+import Team from './pages/Team.jsx';
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -38,6 +39,7 @@ export default function App() {
           <Route path="/programs" element={<Programs />} />
           <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/impact" element={<Impact />} />
+          <Route path="/team" element={<Team />} />
         </Routes>
       </main>
       <Footer />

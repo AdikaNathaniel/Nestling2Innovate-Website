@@ -8,7 +8,7 @@ const NAV = [
     to: '/about',
     items: [
       { label: 'Our Story', to: '/about#story' },
-      { label: 'Our Team', to: '/about#team' },
+      { label: 'Our Team', to: '/team' },
       { label: 'Mission & Vision', to: '/about#mission' },
     ],
   },
