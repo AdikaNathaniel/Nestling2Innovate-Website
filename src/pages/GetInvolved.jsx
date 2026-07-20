@@ -77,7 +77,7 @@ export default function GetInvolved() {
               Web Design, Programming, and AI Literacy, as well as support for our Global Virtual
               Internships track.
             </p>
-            <a href="mailto:info@nestling2innovate.org?subject=Volunteer%20Interest" className="btn btn-primary">Become a Volunteer</a>
+            <a href="https://forms.gle/4ry4xDKefR5ZzRRe9" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Become a Volunteer</a>
           </Reveal>
           <Reveal as="img" variant="right" delay={0.1}
             src="/images/get-involved-mentor-teacher.jpg"
