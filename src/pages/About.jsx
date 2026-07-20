@@ -93,7 +93,7 @@ export default function About() {
             <Reveal variant="drop" delay={0} className="team-card">
               <img src="/team/samueletsiakohdp.jpg.jpeg" alt="Samuel Etsiakoh" />
               <h3>Samuel Etsiakoh</h3>
-              <div className="role">Founder, BEEVIF</div>
+              <div className="role">Founder and Director</div>
             </Reveal>
 
             <Reveal variant="drop" delay={0.12} className="team-card">
