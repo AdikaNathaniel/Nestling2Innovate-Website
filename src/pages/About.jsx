@@ -127,7 +127,7 @@ export default function About() {
             </Reveal>
 
             <Reveal variant="drop" delay={0.72} className="team-card">
-              <img src="/team/edwin-kpodzro.jpeg" alt="Edwin Kpodzro" />
+              <img src="/team/edwin-kpodzro.jpeg" alt="Edwin Kpodzro" style={{ objectPosition: 'center top' }} />
               <h3>Edwin Kpodzro</h3>
               <div className="role">Director of Innovation and Growth</div>
             </Reveal>

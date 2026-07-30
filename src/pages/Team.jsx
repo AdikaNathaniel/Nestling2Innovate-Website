@@ -84,6 +84,7 @@ const MEMBERS = [
     name: 'Edwin Kpodzro',
     role: 'Director of Innovation and Growth',
     image: '/team/edwin-kpodzro.jpeg',
+    imagePosition: 'center top',
     bio: [
       'Edwin Kpodzro holds a Ph.D. and M.S. in Mechanical Engineering from Purdue University, with dissertation research focused on EV battery circularity, including end-of-life lithium-ion battery recycling and economic recovery strategies for critical materials. He graduated with honors in Mechanical Engineering and Mathematics from Calvin University, and as a Ph.D. student at Purdue he was also part of the Ecological Sciences and Engineering Interdisciplinary Graduate Program and the Interdisciplinary Graduate Concentration in Transformational Innovation and Design.',
       'He currently works as a Senior Associate at Innosight, a growth strategy and innovation consulting firm cofounded by Clayton Christensen, following earlier roles there as Associate Consultant and Summer Associate, along with a Summer Associate Consultant internship at Porsche Consulting. As a founding member of the Graduate Researchers for International Development (GRID) student organization at Purdue, Edwin has long focused on translating academic research into participatory, interdisciplinary solutions for challenges like poverty, resource efficiency, and sustainable food systems, work recognized by Bayer Crop Science, which named him one of 100 global youth leaders at the 2021 Youth Ag Summit.',
@@ -119,7 +120,11 @@ export default function Team() {
                 className="team-profile"
               >
                 <div className="team-profile-image">
-                  <img src={member.image} alt={member.name} />
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    style={member.imagePosition ? { objectPosition: member.imagePosition } : undefined}
+                  />
                 </div>
                 <div className="team-profile-content">
                   <h2>{member.name}</h2>
