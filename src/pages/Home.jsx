@@ -25,10 +25,10 @@ export default function Home() {
           </div>
 
           <div className="hero-stats">
-            <div><StatNumber target={172} /><span className="lbl">Learners Served</span></div>
+            <div><StatNumber target={18} /><span className="lbl">Learners Served</span></div>
             <div><StatNumber target={4} /><span className="lbl">Proof-of-Concept Programs</span></div>
             <div><StatNumber target={1} suffix="st" /><span className="lbl">Gemini AI Certified K12 in Ghana</span></div>
-            <div><StatNumber target={2025} /><span className="lbl">Programs Launched</span></div>
+            <div><span className="num">Upcoming</span><span className="lbl">New Programs Coming Soon</span></div>
           </div>
         </div>
       </section>
@@ -41,7 +41,7 @@ export default function Home() {
             <p>
               BEEVIF is a Ghana-registered charitable foundation based in Tantra Hills, Accra. Our
               flagship initiative, Nestling2Innovate, operates from the Special Grace Academy (SGA)
-              campus, serving 172 learners while extending our reach to neighbouring schools and Senior
+              campus, serving 18 learners while extending our reach to neighbouring schools and Senior
               High School graduates.
             </p>
             <p>

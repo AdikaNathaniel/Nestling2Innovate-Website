@@ -41,7 +41,7 @@ export default function About() {
               youth in under-resourced communities.
             </p>
             <p>
-              Operating from the Special Grace Academy (SGA) campus, N2I serves 172 learners while
+              Operating from the Special Grace Academy (SGA) campus, N2I serves 18 learners while
               extending our reach to neighbouring schools and Senior High School (SHS) graduates. Since
               2025, we have successfully run four proof-of-concept programs in web design, global
               virtual internships, programming, and AI literacy — producing one of the first Google

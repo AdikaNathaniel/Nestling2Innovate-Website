@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
 const NAV = [
@@ -45,8 +45,20 @@ const NAV = [
 ];
 
 export default function Header() {
+  const headerRef = useRef(null);
   const [navOpen, setNavOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [headerHeight, setHeaderHeight] = useState(88);
+
+  useEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+    const update = () => setHeaderHeight(el.offsetHeight);
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
 
   const isMobile = () => window.innerWidth <= 980;
 
@@ -66,7 +78,7 @@ export default function Header() {
   };
 
   return (
-    <header className="site-header">
+    <header className="site-header" ref={headerRef} style={{ '--header-h': `${headerHeight}px` }}>
       <div className="nav-wrap">
         <Link to="/" className="brand" onClick={closeAll}>
           <img src="/logo.png" alt="BEEVIF logo" className="logo-mark" />
@@ -87,6 +99,7 @@ export default function Header() {
                   onClick={(e) => handleParentClick(e, item)}
                 >
                   {item.label}
+                  {item.items && <span className="dropdown-caret" aria-hidden="true">&#9662;</span>}
                 </NavLink>
                 {item.items && (
                   <div className="dropdown">

@@ -62,7 +62,7 @@ export default function Impact() {
       <section className="stat-strip" id="impact">
         <div className="container grid grid-4">
           <div>
-            <StatNumber target={172} />
+            <StatNumber target={18} />
             <span className="lbl">Learners Served</span>
           </div>
           <div>
@@ -74,8 +74,8 @@ export default function Impact() {
             <span className="lbl">Gemini AI Certified K12 Student in Ghana</span>
           </div>
           <div>
-            <StatNumber target={2025} />
-            <span className="lbl">Programs Launched</span>
+            <span className="num">Upcoming</span>
+            <span className="lbl">New Programs Coming Soon</span>
           </div>
         </div>
       </section>
@@ -87,7 +87,7 @@ export default function Impact() {
             <h2>A Milestone Worth Building On</h2>
             <p>
               Since 2025, N2I has run four proof-of-concept programs — Web Design, Global Virtual
-              Internships, Programming, and AI Literacy — reaching 172 learners at the Special Grace
+              Internships, Programming, and AI Literacy — reaching 18 learners at the Special Grace
               Academy campus and extending into neighbouring schools.
             </p>
             <p>
