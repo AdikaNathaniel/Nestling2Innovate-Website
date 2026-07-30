@@ -46,6 +46,17 @@ const MEMBERS = [
       "At Nestling2Innovate, Nathaniel brings this hands-on engineering experience directly to learners as a Digital Skills Trainer, helping them build real, working software rather than just learning theory.",
     ],
   },
+  {
+    id: 'chioma-osanebi',
+    name: 'Chioma Osanebi',
+    role: 'Social Media Manager',
+    image: '/team/chioma-osanebi.jpeg',
+    bio: [
+      'Chioma Osanebi is a Computer Science student at Lancaster University Ghana, with hands-on experience across frontend development, digital communication, and community leadership. She interned as a Frontend Developer at Future Interns, building responsive React applications, integrating APIs, and contributing to code reviews and UI/UX improvements.',
+      'Beyond the classroom, Chioma serves as President of the Computer Science Society at Lancaster University Ghana, where she coordinates academic and technical events including CS Week, and also holds roles as a Class Representative and Secretary of the International Students Committee — experience that sharpened the organizational and communication skills she brings to her work.',
+      "At Nestling2Innovate, Chioma is the Social Media Manager, shaping how N2I tells its story online — sharing learner milestones, program updates, and community impact to grow visibility and support for the mission.",
+    ],
+  },
 ];
 
 export default function Team() {

@@ -107,6 +107,12 @@ export default function About() {
               <h3>Nathaniel Adika</h3>
               <div className="role">Digital Skills Trainer</div>
             </Reveal>
+
+            <Reveal variant="drop" delay={0.36} className="team-card">
+              <img src="/team/chioma-osanebi.jpeg" alt="Chioma Osanebi" />
+              <h3>Chioma Osanebi</h3>
+              <div className="role">Social Media Manager</div>
+            </Reveal>
           </div>
         </div>
       </section>
