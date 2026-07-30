@@ -14,7 +14,7 @@ const STORIES = {
   'lauren-patterson': {
     name: 'Lauren Patterson',
     date: '2026',
-    role: 'N2I Success Story · Aspiring Responsive Web Designer',
+    role: 'Aspiring Responsive Web Designer',
     image: '/news/lauren-patterson.jpg',
     certificates: [
       { image: '/news/lauren-cert-freecodecamp.jpg', label: 'freeCodeCamp · Responsive Web Design' },
