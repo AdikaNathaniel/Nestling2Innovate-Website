@@ -57,6 +57,17 @@ const MEMBERS = [
       "At Nestling2Innovate, Chioma is the Social Media Manager, shaping how N2I tells its story online by sharing learner milestones, program updates, and community impact to grow visibility and support for the mission.",
     ],
   },
+  {
+    id: 'mina-ama-mokani',
+    name: 'Mina Ama Mokani',
+    role: 'Diversity, Equity & Inclusion Coordinator',
+    image: '/team/mina-ama-mokani.jpeg',
+    bio: [
+      'Mina Ama Mokani is a psychology graduate from the University of Cape Coast and a behavior therapist dedicated to supporting children with autism and young people navigating emotional distress. She currently works as a Preschool Special Needs Expert at International Community School Ghana and as a Behavioral Therapist at SpecCare Development Center, where she helps implement individualized treatment plans, teaches social and communication skills, and works closely with parents and teachers to support children\'s development.',
+      'She is also the founder of SpecCare Development Center and Renewed Roses Foundation, an organization supporting young women through emotional distress, and serves as a board member of The Mentoring Connection. Mina is an active disability inclusion and mental health advocate, connected with the Africa Dyslexia Organization Network in championing accessible, compassionate support for people with special needs.',
+      'At Nestling2Innovate, Mina serves as Diversity, Equity, and Inclusion Coordinator, helping ensure the program stays accessible, supportive, and welcoming for every learner, regardless of background or ability.',
+    ],
+  },
 ];
 
 export default function Team() {

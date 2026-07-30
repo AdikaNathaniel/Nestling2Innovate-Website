@@ -113,6 +113,12 @@ export default function About() {
               <h3>Chioma Osanebi</h3>
               <div className="role">Social Media Manager</div>
             </Reveal>
+
+            <Reveal variant="drop" delay={0.48} className="team-card">
+              <img src="/team/mina-ama-mokani.jpeg" alt="Mina Ama Mokani" />
+              <h3>Mina Ama Mokani</h3>
+              <div className="role">Diversity, Equity &amp; Inclusion Coordinator</div>
+            </Reveal>
           </div>
         </div>
       </section>
