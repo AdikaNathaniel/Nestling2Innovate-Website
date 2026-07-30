@@ -14,7 +14,6 @@ const STORIES = {
   'lauren-patterson': {
     name: 'Lauren Patterson',
     date: '2026',
-    role: 'Aspiring Responsive Web Designer',
     image: '/news/lauren-patterson.jpg',
     certificates: [
       { image: '/news/lauren-cert-freecodecamp.jpg', label: 'freeCodeCamp · Responsive Web Design' },
@@ -73,7 +72,6 @@ export default function NewsStory() {
               <div className="team-profile-content">
                 <span className="eyebrow">{story.date}</span>
                 <h2>{story.name}</h2>
-                <div className="role">{story.role}</div>
                 {story.body.map((para, idx) => (
                   <p key={idx}>{para}</p>
                 ))}
