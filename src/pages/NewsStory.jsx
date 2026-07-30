@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Reveal from '../components/Reveal.jsx';
 import HeroSlideshow from '../components/HeroSlideshow.jsx';
+import Marquee from '../components/Marquee.jsx';
 
 const STORY_SLIDES = [
   '/images/impact-graduation-celebration.jpg',
@@ -15,7 +16,11 @@ const STORIES = {
     date: '2026',
     role: 'N2I Success Story · Aspiring Responsive Web Designer',
     image: '/news/lauren-patterson.jpg',
-    tags: ['N2ISuccessStories', 'Nestling2Innovate', 'N2I', 'BEEVIF', 'SpecialGraceAcademy'],
+    certificates: [
+      { image: '/news/lauren-cert-freecodecamp.jpg', label: 'freeCodeCamp · Responsive Web Design' },
+      { image: '/news/lauren-cert-bcg.jpg', label: 'BCG · Introduction to Strategy Consulting' },
+      { image: '/news/lauren-cert-city-century.jpg', label: 'City Century Solicitors · Solicitor Apprentice' },
+    ],
     body: [
       'At BEEVIF International and Special Grace Academy, we believe that every young person deserves the opportunity to discover their potential, build practical skills, and prepare for the future of work.',
       "Today, we're proud to spotlight Lauren Patterson, a recent high school graduate of Special Grace Academy (SGA) and participant in the Nestling2Innovate (N2I) Programme.",
@@ -72,11 +77,21 @@ export default function NewsStory() {
                 {story.body.map((para, idx) => (
                   <p key={idx}>{para}</p>
                 ))}
-                <div style={{ marginTop: '8px' }}>
-                  {story.tags.map((tag) => (
-                    <span key={tag} className="card-tag" style={{ marginRight: '8px' }}>#{tag}</span>
-                  ))}
-                </div>
+
+                {story.certificates && (
+                  <div className="cert-widget">
+                    <h3>Certificates &amp; Achievements</h3>
+                    <Marquee duration={18}>
+                      {story.certificates.map((cert) => (
+                        <div className="cert-card" key={cert.label}>
+                          <img src={cert.image} alt={cert.label} />
+                          <div className="cert-label">{cert.label}</div>
+                        </div>
+                      ))}
+                    </Marquee>
+                  </div>
+                )}
+
                 <Link to="/impact#news" className="btn btn-outline-dark" style={{ marginTop: '24px', display: 'inline-block' }}>
                   Back to News &amp; Updates
                 </Link>
