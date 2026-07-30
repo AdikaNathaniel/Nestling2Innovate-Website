@@ -592,6 +592,17 @@ p { color: var(--text-light); }
 .news-item img { border-radius: 10px; height: 130px; width: 100%; object-fit: cover; }
 .news-item .date { color: var(--primary); font-weight: 700; font-size: 0.78rem; text-transform: uppercase; margin-bottom: 6px; }
 
+.news-item-link {
+  cursor: pointer;
+  border-radius: var(--radius);
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0 -12px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.news-item-link:hover { background: var(--tint); transform: translateY(-2px); }
+.news-item-link h3 { color: var(--primary); }
+
 /* ---------- Footer ---------- */
 .site-footer { background: var(--text); color: rgba(255,255,255,0.85); padding: 64px 0 0; }
 .site-footer .container { padding-left: 12px; }

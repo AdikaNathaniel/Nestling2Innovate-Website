@@ -125,7 +125,16 @@ export default function Impact() {
             <Reveal as="h2" variant="slide-right" delay={0.08}>What's Next for N2I</Reveal>
           </div>
 
-          <Reveal variant="drop" delay={0} as="div" className="news-item">
+          <Reveal variant="drop" delay={0} as={Link} to="/news/lauren-patterson" className="news-item news-item-link">
+            <img src="/news/lauren-patterson.jpg" alt="Lauren Patterson" />
+            <div>
+              <div className="date">2026 &middot; Success Story</div>
+              <h3>N2I Success Story: Lauren Patterson</h3>
+              <p>SGA graduate and N2I participant Lauren Patterson earned her freeCodeCamp Responsive Web Design Certification and completed virtual job simulations with BCG and City Century Solicitors. Read her story.</p>
+            </div>
+          </Reveal>
+
+          <Reveal variant="drop" delay={0.1} as="div" className="news-item">
             <img src="/images/programs-innovation-centre-lab.jpg" alt="Concept image for the Community STEM Innovation Centre" />
             <div>
               <div className="date">2025</div>
@@ -134,7 +143,7 @@ export default function Impact() {
             </div>
           </Reveal>
 
-          <Reveal variant="drop" delay={0.1} as="div" className="news-item">
+          <Reveal variant="drop" delay={0.2} as="div" className="news-item">
             <img src="/images/programs-ai-literacy-boy-laptop.jpg" alt="Learner completing AI literacy coursework" />
             <div>
               <div className="date">2025</div>
@@ -143,7 +152,7 @@ export default function Impact() {
             </div>
           </Reveal>
 
-          <Reveal variant="drop" delay={0.2} as="div" className="news-item">
+          <Reveal variant="drop" delay={0.3} as="div" className="news-item">
             <img src="/images/community-rural-children-nigeria.jpg" alt="Children in a rural community" />
             <div>
               <div className="date">Coming Soon</div>
