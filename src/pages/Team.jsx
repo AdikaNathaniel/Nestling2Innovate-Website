@@ -68,6 +68,28 @@ const MEMBERS = [
       'At Nestling2Innovate, Mina serves as Diversity, Equity, and Inclusion Coordinator, helping ensure the program stays accessible, supportive, and welcoming for every learner, regardless of background or ability.',
     ],
   },
+  {
+    id: 'sandra-boakye-boaitey',
+    name: 'Sandra Boakye Boaitey',
+    role: 'Operations Manager',
+    image: '/team/sandra-boakye-boaitey.jpeg',
+    bio: [
+      "Sandra Boakye Boaitey is a graduate of the University of Education, Ghana, with a Bachelor's degree in Procurement and Supply Chain Management. She built a strong foundation in both the academic and practical sides of administration, procurement, and management, sharpened during her national service at the Innovation Hub and Procurement Unit of the National Insurance Commission in Accra.",
+      'She currently works as a Logistics Coordinator at MGA Consulting Ghana Ltd., supporting JKA Logistics Limited with procurement and supply chain operations, and brings a results-driven approach to planning and coordination.',
+      "At Nestling2Innovate, Sandra serves as Operations Manager, applying her procurement and logistics expertise to keep the program's day-to-day operations running smoothly so learners and trainers can focus on teaching and building.",
+    ],
+  },
+  {
+    id: 'edwin-kpodzro',
+    name: 'Edwin Kpodzro',
+    role: 'Director of Innovation and Growth',
+    image: '/team/edwin-kpodzro.jpeg',
+    bio: [
+      'Edwin Kpodzro holds a Ph.D. and M.S. in Mechanical Engineering from Purdue University, with dissertation research focused on EV battery circularity, including end-of-life lithium-ion battery recycling and economic recovery strategies for critical materials. He graduated with honors in Mechanical Engineering and Mathematics from Calvin University, and as a Ph.D. student at Purdue he was also part of the Ecological Sciences and Engineering Interdisciplinary Graduate Program and the Interdisciplinary Graduate Concentration in Transformational Innovation and Design.',
+      'He currently works as a Senior Associate at Innosight, a growth strategy and innovation consulting firm cofounded by Clayton Christensen, following earlier roles there as Associate Consultant and Summer Associate, along with a Summer Associate Consultant internship at Porsche Consulting. As a founding member of the Graduate Researchers for International Development (GRID) student organization at Purdue, Edwin has long focused on translating academic research into participatory, interdisciplinary solutions for challenges like poverty, resource efficiency, and sustainable food systems, work recognized by Bayer Crop Science, which named him one of 100 global youth leaders at the 2021 Youth Ag Summit.',
+      "At Nestling2Innovate, Edwin serves as Director of Innovation and Growth, bringing his background in strategy, sustainable technology, and interdisciplinary design to help guide N2I's growth from pilot programs into a lasting, scalable innovation pipeline for Ghana's learners.",
+    ],
+  },
 ];
 
 export default function Team() {

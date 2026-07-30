@@ -119,6 +119,18 @@ export default function About() {
               <h3>Mina Ama Mokani</h3>
               <div className="role">Diversity, Equity &amp; Inclusion Coordinator</div>
             </Reveal>
+
+            <Reveal variant="drop" delay={0.6} className="team-card">
+              <img src="/team/sandra-boakye-boaitey.jpeg" alt="Sandra Boakye Boaitey" />
+              <h3>Sandra Boakye Boaitey</h3>
+              <div className="role">Operations Manager</div>
+            </Reveal>
+
+            <Reveal variant="drop" delay={0.72} className="team-card">
+              <img src="/team/edwin-kpodzro.jpeg" alt="Edwin Kpodzro" />
+              <h3>Edwin Kpodzro</h3>
+              <div className="role">Director of Innovation and Growth</div>
+            </Reveal>
           </div>
         </div>
       </section>
