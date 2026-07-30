@@ -53,8 +53,8 @@ const MEMBERS = [
     image: '/team/chioma-osanebi.jpeg',
     bio: [
       'Chioma Osanebi is a Computer Science student at Lancaster University Ghana, with hands-on experience across frontend development, digital communication, and community leadership. She interned as a Frontend Developer at Future Interns, building responsive React applications, integrating APIs, and contributing to code reviews and UI/UX improvements.',
-      'Beyond the classroom, Chioma serves as President of the Computer Science Society at Lancaster University Ghana, where she coordinates academic and technical events including CS Week, and also holds roles as a Class Representative and Secretary of the International Students Committee — experience that sharpened the organizational and communication skills she brings to her work.',
-      "At Nestling2Innovate, Chioma is the Social Media Manager, shaping how N2I tells its story online — sharing learner milestones, program updates, and community impact to grow visibility and support for the mission.",
+      'Beyond the classroom, Chioma serves as President of the Computer Science Society at Lancaster University Ghana, where she coordinates academic and technical events including CS Week, and also holds roles as a Class Representative and Secretary of the International Students Committee, gaining experience that sharpened the organizational and communication skills she brings to her work.',
+      "At Nestling2Innovate, Chioma is the Social Media Manager, shaping how N2I tells its story online by sharing learner milestones, program updates, and community impact to grow visibility and support for the mission.",
     ],
   },
 ];
