@@ -44,6 +44,21 @@ const STORIES = {
       "Congratulations, Trudy! We are proud of your accomplishment and look forward to seeing the impact you'll make in the world of technology.",
     ],
   },
+  'sawda-kareem': {
+    name: 'Sawda Kareem',
+    date: '2026',
+    image: '/news/sawda-kareem.jpg',
+    certificates: [
+      { image: '/news/sawda-cert-gemini.jpg', label: 'Google for Education · Gemini Certified Student (K12)' },
+    ],
+    body: [
+      'Celebrating Another Young AI Achiever!',
+      "Congratulations to Sawda Kareem on earning her Google Gemini Certified Student (K-12) certification, an important milestone in her journey into Artificial Intelligence and digital innovation.",
+      'Sawda is a participant in the Nestling2Innovate (N2I) Programme, a collaboration between BEEVIF International and Special Grace Academy (SGA) equipping young people with practical STEM and AI skills.',
+      "Her achievement reflects the power of providing young people with access to quality STEM and AI education. At N2I, we're committed to equipping learners with future ready skills that inspire innovation, creativity, and lifelong learning.",
+      "Congratulations, Sawda! We are proud of your accomplishment and look forward to seeing the impact you'll make in the world of technology.",
+    ],
+  },
 };
 
 export default function NewsStory() {

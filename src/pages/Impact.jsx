@@ -143,7 +143,16 @@ export default function Impact() {
             </div>
           </Reveal>
 
-          <Reveal variant="drop" delay={0.2} as="div" className="news-item">
+          <Reveal variant="drop" delay={0.2} as={Link} to="/news/sawda-kareem" className="news-item news-item-link">
+            <img src="/news/sawda-kareem.jpg" alt="Sawda Kareem" />
+            <div>
+              <div className="date">2026 &middot; Success Story</div>
+              <h3>N2I Success Story: Sawda Kareem</h3>
+              <p>N2I participant Sawda Kareem became one of the first Google Gemini AI Certified (K12) students in Ghana. Read her story.</p>
+            </div>
+          </Reveal>
+
+          <Reveal variant="drop" delay={0.3} as="div" className="news-item">
             <img src="/images/programs-innovation-centre-lab.jpg" alt="Concept image for the Community STEM Innovation Centre" />
             <div>
               <div className="date">2025</div>
@@ -152,7 +161,7 @@ export default function Impact() {
             </div>
           </Reveal>
 
-          <Reveal variant="drop" delay={0.3} as="div" className="news-item">
+          <Reveal variant="drop" delay={0.4} as="div" className="news-item">
             <img src="/images/programs-ai-literacy-boy-laptop.jpg" alt="Learner completing AI literacy coursework" />
             <div>
               <div className="date">2025</div>
@@ -161,7 +170,7 @@ export default function Impact() {
             </div>
           </Reveal>
 
-          <Reveal variant="drop" delay={0.4} as="div" className="news-item">
+          <Reveal variant="drop" delay={0.5} as="div" className="news-item">
             <img src="/images/community-rural-children-nigeria.jpg" alt="Children in a rural community" />
             <div>
               <div className="date">Coming Soon</div>
