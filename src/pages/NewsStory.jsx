@@ -94,13 +94,16 @@ export default function NewsStory() {
                 {story.certificates && (
                   <div className="cert-widget">
                     <h3>Certificates &amp; Achievements</h3>
-                    <Marquee duration={18}>
+                    <Marquee duration={story.certificates.length === 1 ? 20 : 18}>
                       {story.certificates.map((cert) => (
                         <div className="cert-card" key={cert.label}>
                           <img src={cert.image} alt={cert.label} />
                           <div className="cert-label">{cert.label}</div>
                         </div>
                       ))}
+                      {story.certificates.length === 1 && (
+                        <div className="cert-spacer" aria-hidden="true" />
+                      )}
                     </Marquee>
                   </div>
                 )}
