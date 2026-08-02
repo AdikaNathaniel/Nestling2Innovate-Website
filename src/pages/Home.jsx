@@ -40,9 +40,9 @@ export default function Home() {
             <h2>An initiative of the Baiden Etsiakoh Eagle Vision Foundation</h2>
             <p>
               BEEVIF is a Ghana-registered charitable foundation based in Tantra Hills, Accra. Our
-              flagship initiative, Nestling2Innovate, operates from the Special Grace Academy (SGA)
-              campus, serving 18 learners while extending our reach to neighbouring schools and Senior
-              High School graduates.
+              flagship programme, the Nestling 2Innovate Initiative, operates from the Special Grace
+              Academy (SGA) campus, serving 18 learners while extending our reach to neighbouring
+              schools and Senior High School graduates.
             </p>
             <p>
               Since 2025, we've run four proof-of-concept programs successfully and produced one of the

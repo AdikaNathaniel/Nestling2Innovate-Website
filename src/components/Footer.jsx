@@ -41,7 +41,7 @@ export default function Footer() {
               <span className="logo-badge">
                 <img src="/logo.png" alt="BEEVIF logo" className="logo-mark" style={{ width: 76, height: 76 }} />
               </span>
-              <span>Nestling2Innovate</span>
+              <span>Nestling 2Innovate</span>
             </div>
             <p>
               An initiative of the Baiden Etsiakoh Eagle Vision Foundation (BEEVIF), a Ghana-registered
@@ -103,7 +103,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <span>&copy; {new Date().getFullYear()} Baiden Etsiakoh Eagle Vision Foundation (BEEVIF). All rights reserved.</span>
-          <span>Nestling2Innovate &middot; Accra, Ghana</span>
+          <span>Nestling 2Innovate &middot; Accra, Ghana</span>
         </div>
       </div>
     </footer>

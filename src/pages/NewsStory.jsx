@@ -22,10 +22,10 @@ const STORIES = {
     ],
     body: [
       'At BEEVIF International and Special Grace Academy, we believe that every young person deserves the opportunity to discover their potential, build practical skills, and prepare for the future of work.',
-      "Today, we're proud to spotlight Lauren Patterson, a recent high school graduate of Special Grace Academy (SGA) and participant in the Nestling2Innovate (N2I) Programme.",
+      "Today, we're proud to spotlight Lauren Patterson, a recent high school graduate of Special Grace Academy (SGA) and participant in the Nestling 2Innovate Initiative (N2I).",
       'Driven by a passion for web development and digital innovation, Lauren has continued to invest in her professional growth. Through the N2I Programme, she has earned the freeCodeCamp Responsive Web Design Certification and completed virtual job simulations with Boston Consulting Group (BCG) and City Century Solicitors, gaining practical exposure to responsive web design, strategy consulting, and legal research.',
       'Lauren is currently building her career as an aspiring Responsive Web Designer and is open to internship, volunteer, and entry-level opportunities where she can continue learning, contribute meaningfully, and grow professionally.',
-      "Her journey reflects the mission of the Nestling2Innovate (N2I) Programme to equip young people with practical, industry-relevant skills, global exposure, and the confidence to thrive in today's digital economy.",
+      "Her journey reflects the mission of the Nestling 2Innovate Initiative (N2I) to equip young people with practical, industry-relevant skills, global exposure, and the confidence to thrive in today's digital economy.",
       'Congratulations, Lauren! We are proud of your achievements and look forward to celebrating many more milestones with you.',
     ],
   },
@@ -39,7 +39,7 @@ const STORIES = {
     body: [
       'Celebrating Another Young AI Achiever!',
       'Congratulations to Trudy Kanbong on earning her Google Gemini Certified Student (K-12) certification, an important milestone in her journey into Artificial Intelligence and digital innovation.',
-      'Having recently completed her BECE education at Theorose School, Trudy is already embracing the future through the Nestling2Innovate (N2I) Programme, a collaboration between BEEVIF International and Special Grace Academy (SGA).',
+      'Having recently completed her BECE education at Theorose School, Trudy is already embracing the future through the Nestling 2Innovate Initiative (N2I), a collaboration between BEEVIF International and Special Grace Academy (SGA).',
       "Her achievement reflects the power of providing young people with access to quality STEM and AI education. At N2I, we're committed to equipping learners with future ready skills that inspire innovation, creativity, and lifelong learning.",
       "Congratulations, Trudy! We are proud of your accomplishment and look forward to seeing the impact you'll make in the world of technology.",
     ],
@@ -54,7 +54,7 @@ const STORIES = {
     body: [
       'Celebrating Another Young AI Achiever!',
       "Congratulations to Sawda Kareem on earning her Google Gemini Certified Student (K-12) certification, an important milestone in her journey into Artificial Intelligence and digital innovation.",
-      'Sawda is a participant in the Nestling2Innovate (N2I) Programme, a collaboration between BEEVIF International and Special Grace Academy (SGA) equipping young people with practical STEM and AI skills.',
+      'Sawda is a participant in the Nestling 2Innovate Initiative (N2I), a collaboration between BEEVIF International and Special Grace Academy (SGA) equipping young people with practical STEM and AI skills.',
       "Her achievement reflects the power of providing young people with access to quality STEM and AI education. At N2I, we're committed to equipping learners with future ready skills that inspire innovation, creativity, and lifelong learning.",
       "Congratulations, Sawda! We are proud of your accomplishment and look forward to seeing the impact you'll make in the world of technology.",
     ],

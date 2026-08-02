@@ -36,9 +36,9 @@ export default function About() {
             <h2>The Baiden Etsiakoh Eagle Vision Foundation</h2>
             <p>
               BEEVIF is a Ghana-registered charitable foundation based in Tantra Hills, Accra. Our
-              primary initiative, <strong>Nestling2Innovate (N2I)</strong>, delivers STEM, digital
-              skills, and artificial intelligence education to school-age children and out-of-school
-              youth in under-resourced communities.
+              primary programme, the <strong>Nestling 2Innovate Initiative (N2I)</strong>, delivers STEM,
+              digital skills, and artificial intelligence education to school-age children and
+              out-of-school youth in under-resourced communities.
             </p>
             <p>
               Operating from the Special Grace Academy (SGA) campus, N2I serves 18 learners while
@@ -57,6 +57,44 @@ export default function About() {
             src="/images/programs-students-classroom.jpg"
             alt="N2I learners at the Special Grace Academy campus"
             style={{ height: '640px' }} />
+        </div>
+      </section>
+
+      <section id="why-n2i">
+        <div className="container">
+          <div className="section-head">
+            <Reveal as="h2" variant="slide-right">Why the Nestling 2Innovate Initiative (N2I)?</Reveal>
+          </div>
+          <Reveal variant="fade" style={{ maxWidth: '760px', margin: '0 auto' }}>
+            <p>
+              Across Ghana's Junior High Schools, students who grew up on smartphones still
+              underperform in their ICT exams. Not from lack of ability, but from lack of anything to
+              build. Classrooms teach ICT in theory, with little equipment or hands-on practice, so a
+              generation that already loves technology rarely gets to create with it.
+            </p>
+            <p>
+              We built Nestling 2Innovate (N2I), an education initiative under BEEVIF, a registered
+              Ghanaian NGO, to close that gap — teaching web development, programming, and artificial
+              intelligence, already in the JHS syllabus, through a "Nestling → Fledgling → Eagle"
+              learner pathway.
+            </p>
+            <p>
+              N2I is already working. Across five pilot tracks, N2I has moved 18 learners through
+              hands-on training, with 100% completion in its web design and internship cohorts. One
+              14-year-old Raspberry Pi student alone built four software projects, including an AI tool
+              and a game.
+            </p>
+            <p style={{ color: 'var(--text)', fontWeight: 700, fontSize: '1.2rem', textAlign: 'center', margin: '28px 0' }}>
+              These kids don't just learn about technology. They build with it.
+            </p>
+            <p>
+              N2I's ambition doesn't stop at JHS. It also targets SHS graduates priced out of a
+              university degree — equipping them with digital skills, then working to place them with
+              mission-aligned partners for further education, paid internships, and jobs, and staying
+              involved through university and beyond. For donors and investors, that's where the return
+              lives: a talent-pipeline model that pays off as graduates get hired.
+            </p>
+          </Reveal>
         </div>
       </section>
 

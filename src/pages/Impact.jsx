@@ -25,7 +25,7 @@ const TESTIMONIALS = [
   },
   {
     quote: '"Four pilot programs in under a year, with real, measurable outcomes — that\'s the foundation we\'re now scaling into a permanent Innovation Centre."',
-    name: 'Nestling2Innovate Team',
+    name: 'Nestling 2Innovate Team',
     meta: 'BEEVIF, Accra',
   },
 ];

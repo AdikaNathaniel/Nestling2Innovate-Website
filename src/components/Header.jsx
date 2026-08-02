@@ -82,7 +82,7 @@ export default function Header() {
       <div className="nav-wrap">
         <Link to="/" className="brand" onClick={closeAll}>
           <img src="/logo.png" alt="BEEVIF logo" className="logo-mark" />
-          <span className="brand-text">Nestling2Innovate</span>
+          <span className="brand-text">Nestling 2Innovate</span>
         </Link>
 
         <nav className={`main-nav${navOpen ? ' open' : ''}`}>
