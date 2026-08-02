@@ -62,7 +62,7 @@ export default function About() {
 
       <section id="why-n2i" style={{ padding: '24px 0' }}>
         <div className="container">
-          <Reveal as="h2" variant="slide-right" style={{ marginBottom: 20 }}>Why the Nestling 2Innovate Initiative (N2I)?</Reveal>
+          <Reveal as="h2" variant="slide-right" style={{ marginBottom: 20 }}>Why Nestling 2Innovate Initiative (N2I)?</Reveal>
           <Reveal variant="fade">
             <p>
               Across Ghana's Junior High Schools, students who grew up on smartphones still
