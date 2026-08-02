@@ -29,11 +29,11 @@ const MEMBERS = [
   },
   {
     id: 'surya-js',
-    name: 'Surya JS',
+    name: 'Surya J S',
     role: 'Grant Manager',
     image: '/team/surya-js.jpeg',
-    background: 'Experience in grant research, proposal development, and donor relationship management.',
-    function: "Leads N2I's grant strategy, identifying funding opportunities and building the partnerships that help the program scale into a permanent Community STEM Innovation Centre.",
+    background: 'B.A. in English Literature. Certified in Business Analysis, Project Management, Data Analysis, and Generative AI by Microsoft & LinkedIn. Former Head of Customer Success, Head of Product Research, and UX Researcher, with experience supporting startups and nonprofits.',
+    function: 'Supports executive operations, grant research, funding strategy, project coordination, partnership development, and organizational growth at N2I.',
   },
   {
     id: 'mawunyo-kwasi-kutor',
