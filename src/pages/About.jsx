@@ -29,7 +29,7 @@ export default function About() {
         </div>
       </section>
 
-      <section id="story">
+      <section id="story" style={{ paddingBottom: '32px' }}>
         <div className="container split">
           <Reveal variant="left">
             <span className="eyebrow">Our Story</span>
@@ -60,12 +60,10 @@ export default function About() {
         </div>
       </section>
 
-      <section id="why-n2i">
+      <section id="why-n2i" style={{ padding: '24px 0' }}>
         <div className="container">
-          <div className="section-head">
-            <Reveal as="h2" variant="slide-right">Why the Nestling 2Innovate Initiative (N2I)?</Reveal>
-          </div>
-          <Reveal variant="fade" style={{ maxWidth: '760px', margin: '0 auto' }}>
+          <Reveal as="h2" variant="slide-right" style={{ marginBottom: 20 }}>Why the Nestling 2Innovate Initiative (N2I)?</Reveal>
+          <Reveal variant="fade">
             <p>
               Across Ghana's Junior High Schools, students who grew up on smartphones still
               underperform in their ICT exams. Not from lack of ability, but from lack of anything to
@@ -84,7 +82,7 @@ export default function About() {
               14-year-old Raspberry Pi student alone built four software projects, including an AI tool
               and a game.
             </p>
-            <p style={{ color: 'var(--text)', fontWeight: 700, fontSize: '1.2rem', textAlign: 'center', margin: '28px 0' }}>
+            <p style={{ color: 'var(--text)', fontWeight: 700, fontSize: '1.2rem', margin: '28px 0' }}>
               These kids don't just learn about technology. They build with it.
             </p>
             <p>
