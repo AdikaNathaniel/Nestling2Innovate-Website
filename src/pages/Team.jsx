@@ -19,6 +19,15 @@ const MEMBERS = [
     function: 'Founded and leads Nestling 2Innovate, building the "Nestling → Fledgling → Eagle" learner pathway that teaches web development, programming, and AI to JHS students and SHS graduates.',
   },
   {
+    id: 'edwin-kpodzro',
+    name: 'Edwin Kpodzro',
+    role: 'Director of Innovation and Growth',
+    image: '/team/edwin-kpodzro.jpeg',
+    imagePosition: 'center top',
+    background: 'Ph.D. and M.S. in Mechanical Engineering, Purdue University. Senior Associate at Innosight, the growth strategy firm cofounded by Clayton Christensen; named one of 100 global youth leaders at the 2021 Youth Ag Summit.',
+    function: "Guides N2I's growth from pilot programs into a lasting, scalable innovation pipeline for Ghana's learners.",
+  },
+  {
     id: 'surya-js',
     name: 'Surya JS',
     role: 'Grant Manager',
@@ -65,15 +74,6 @@ const MEMBERS = [
     image: '/team/sandra-boakye-boaitey.jpeg',
     background: "Bachelor's degree in Procurement and Supply Chain Management, University of Education, Ghana. Logistics Coordinator at MGA Consulting Ghana Ltd.",
     function: "Applies her procurement and logistics expertise to keep the program's day-to-day operations running smoothly.",
-  },
-  {
-    id: 'edwin-kpodzro',
-    name: 'Edwin Kpodzro',
-    role: 'Director of Innovation and Growth',
-    image: '/team/edwin-kpodzro.jpeg',
-    imagePosition: 'center top',
-    background: 'Ph.D. and M.S. in Mechanical Engineering, Purdue University. Senior Associate at Innosight, the growth strategy firm cofounded by Clayton Christensen; named one of 100 global youth leaders at the 2021 Youth Ag Summit.',
-    function: "Guides N2I's growth from pilot programs into a lasting, scalable innovation pipeline for Ghana's learners.",
   },
 ];
 
