@@ -27,7 +27,7 @@ export default function Home() {
           <div className="hero-stats">
             <div><StatNumber target={18} /><span className="lbl">Learners Served</span></div>
             <div><StatNumber target={4} /><span className="lbl">Proof-of-Concept Programs</span></div>
-            <div><StatNumber target={1} suffix="st" /><span className="lbl">Gemini AI Certified K12 in Ghana</span></div>
+            <div><span className="num">Early</span><span className="lbl">Among Ghana's First Gemini AI Certified K12 Students</span></div>
             <div><span className="num">Upcoming</span><span className="lbl">New Programs Coming Soon</span></div>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function Home() {
                 <div className="card-body">
                   <span className="card-tag">Pilot Program</span>
                   <h3>AI Literacy</h3>
-                  <p>Practical, responsible AI skills — home to Ghana's first Gemini AI Certified K12 student.</p>
+                  <p>Practical, responsible AI skills — home to one of Ghana's first Gemini AI Certified K12 students.</p>
                 </div>
               </div>
             </Reveal>

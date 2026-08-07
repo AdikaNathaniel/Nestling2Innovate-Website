@@ -70,8 +70,8 @@ export default function Impact() {
             <span className="lbl">Proof-of-Concept Programs</span>
           </div>
           <div>
-            <StatNumber target={1} suffix="st" />
-            <span className="lbl">Gemini AI Certified K12 Student in Ghana</span>
+            <span className="num">Early</span>
+            <span className="lbl">Among Ghana's First Gemini AI Certified K12 Students</span>
           </div>
           <div>
             <span className="num">Upcoming</span>
@@ -165,7 +165,7 @@ export default function Impact() {
             <img src="/images/programs-ai-literacy-boy-laptop.jpg" alt="Learner completing AI literacy coursework" />
             <div>
               <div className="date">2025</div>
-              <h3>Ghana's First Gemini AI Certified K12 Students</h3>
+              <h3>Among Ghana's First Gemini AI Certified K12 Students</h3>
               <p>Our AI Literacy program produced one of the first Google Gemini AI Certified (K12) students in Ghana — a milestone for both the learner and the program.</p>
             </div>
           </Reveal>

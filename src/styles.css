@@ -691,10 +691,14 @@ p { color: var(--text-light); }
 }
 
 @media (max-width: 480px) {
+  .nav-wrap { padding: 10px 12px; gap: 6px; }
+  .brand { gap: 6px; }
   .brand small { display: none; }
-  .brand-text { font-size: 1rem; max-width: 140px; }
-  .logo-mark { width: 50px; height: 50px; }
-  .header-actions .btn-primary { padding: 8px 12px; font-size: 0.8rem; }
+  .brand-text { font-size: 0.92rem; max-width: none; }
+  .logo-mark { width: 36px; height: 36px; }
+  .header-actions { gap: 4px; }
+  .header-actions .btn-primary { padding: 7px 10px; font-size: 0.75rem; }
+  .nav-toggle { padding: 6px; }
   .hero-content, .page-header .hero-content { padding-left: 4px; padding-right: 4px; }
 }
 
