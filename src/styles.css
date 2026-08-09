@@ -177,14 +177,14 @@ p { color: var(--text-light); }
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: center;
   justify-self: stretch;
 }
 
 .main-nav > ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  gap: 4px;
 }
 
 .main-nav > ul > li { position: relative; }
