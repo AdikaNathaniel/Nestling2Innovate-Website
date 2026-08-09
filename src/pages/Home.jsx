@@ -59,7 +59,7 @@ export default function Home() {
       </section>
 
       <section className="section-tint">
-        <div className="container container-wide">
+        <div className="container">
           <div className="section-head section-head-wide">
             <Reveal as="span" variant="slide-left" className="eyebrow">What We Teach</Reveal>
             <Reveal as="h2" variant="slide-right" delay={0.08} className="nowrap-heading">Programs Built for Real-World Skills</Reveal>
