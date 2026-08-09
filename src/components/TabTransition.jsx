@@ -1,8 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import confetti from 'canvas-confetti';
 
-const SPLASH_MS = 650;
 const CONFETTI_COLORS = ['#0097b2', '#00b4d8', '#22c55e', '#ffd166', '#ffffff'];
 
 function prefersReducedMotion() {
@@ -48,7 +47,6 @@ function launchConfetti() {
 
 export default function TabTransition() {
   const { pathname } = useLocation();
-  const [visible, setVisible] = useState(false);
   const isFirstRender = useRef(true);
 
   useEffect(() => {
@@ -58,25 +56,8 @@ export default function TabTransition() {
     }
     if (prefersReducedMotion()) return;
 
-    setVisible(true);
-    const hideTimer = setTimeout(() => setVisible(false), SPLASH_MS);
-    const confettiTimer = setTimeout(launchConfetti, SPLASH_MS - 80);
-
-    return () => {
-      clearTimeout(hideTimer);
-      clearTimeout(confettiTimer);
-    };
+    launchConfetti();
   }, [pathname]);
 
-  if (!visible) return null;
-
-  return (
-    <div className="tab-splash" role="presentation" aria-hidden="true">
-      <div className="tab-splash-glow">
-        <div className="tab-splash-badge">
-          <img src="/logo.png" alt="" className="tab-splash-logo" />
-        </div>
-      </div>
-    </div>
-  );
+  return null;
 }
