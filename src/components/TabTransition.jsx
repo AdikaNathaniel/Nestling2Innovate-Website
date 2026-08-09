@@ -47,13 +47,12 @@ function launchConfetti() {
 
 export default function TabTransition() {
   const { pathname } = useLocation();
-  const isFirstRender = useRef(true);
+  const prevPathname = useRef(pathname);
 
   useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
+    if (prevPathname.current === pathname) return;
+    prevPathname.current = pathname;
+
     if (prefersReducedMotion()) return;
 
     launchConfetti();
