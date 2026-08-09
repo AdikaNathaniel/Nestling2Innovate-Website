@@ -133,39 +133,45 @@ export default function About() {
             </Reveal>
 
             <Reveal variant="drop" delay={0.12} className="team-card">
+              <img src="/team/edwin-kpodzro.jpeg" alt="Edwin Kpodzro" style={{ objectPosition: 'center top' }} />
+              <h3>Edwin Kpodzro</h3>
+              <div className="role">Director of Innovation and Growth</div>
+            </Reveal>
+
+            <Reveal variant="drop" delay={0.24} className="team-card">
+              <img src="/team/surya-js.jpeg" alt="Surya J S" />
+              <h3>Surya J S</h3>
+              <div className="role">Grant Manager</div>
+            </Reveal>
+
+            <Reveal variant="drop" delay={0.36} className="team-card">
               <img src="/team/mawunyo-kwasi-kutor.jpeg" alt="Mawunyo Kwasi Kutor" />
               <h3>Mawunyo Kwasi Kutor</h3>
               <div className="role">Digital Skills Trainer</div>
             </Reveal>
 
-            <Reveal variant="drop" delay={0.24} className="team-card">
+            <Reveal variant="drop" delay={0.48} className="team-card">
               <img src="/team/nathaniel-adika.jpeg" alt="Nathaniel Adika" />
               <h3>Nathaniel Adika</h3>
               <div className="role">Digital Skills Trainer</div>
             </Reveal>
 
-            <Reveal variant="drop" delay={0.36} className="team-card">
+            <Reveal variant="drop" delay={0.6} className="team-card">
               <img src="/team/chioma-osanebi.jpeg" alt="Chioma Osanebi" />
               <h3>Chioma Osanebi</h3>
               <div className="role">Social Media Manager</div>
             </Reveal>
 
-            <Reveal variant="drop" delay={0.48} className="team-card">
+            <Reveal variant="drop" delay={0.72} className="team-card">
               <img src="/team/mina-ama-mokani.jpeg" alt="Mina Ama Mokani" />
               <h3>Mina Ama Mokani</h3>
               <div className="role">Diversity, Equity &amp; Inclusion Coordinator</div>
             </Reveal>
 
-            <Reveal variant="drop" delay={0.6} className="team-card">
+            <Reveal variant="drop" delay={0.84} className="team-card">
               <img src="/team/sandra-boakye-boaitey.jpeg" alt="Sandra Boakye Boaitey" />
               <h3>Sandra Boakye Boaitey</h3>
               <div className="role">Operations Manager</div>
-            </Reveal>
-
-            <Reveal variant="drop" delay={0.72} className="team-card">
-              <img src="/team/edwin-kpodzro.jpeg" alt="Edwin Kpodzro" style={{ objectPosition: 'center top' }} />
-              <h3>Edwin Kpodzro</h3>
-              <div className="role">Director of Innovation and Growth</div>
             </Reveal>
           </div>
         </div>
