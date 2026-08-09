@@ -184,7 +184,7 @@ p { color: var(--text-light); }
 .main-nav > ul {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 14px;
 }
 
 .main-nav > ul > li { position: relative; }
