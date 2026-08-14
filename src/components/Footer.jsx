@@ -100,11 +100,6 @@ export default function Footer() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-
-        <div className="footer-bottom">
-          <span>&copy; {new Date().getFullYear()} Baiden Etsiakoh Eagle Vision Foundation (BEEVIF). All rights reserved.</span>
-          <span>Nestling 2Innovate &middot; Accra, Ghana</span>
-        </div>
       </div>
     </footer>
   );
