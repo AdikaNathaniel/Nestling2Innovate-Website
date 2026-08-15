@@ -489,7 +489,7 @@ p { color: var(--text-light); }
 }
 
 /* ---------- Team ---------- */
-.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 28px; }
+.team-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px; }
 .team-card { text-align: center; }
 .team-card img {
   width: 180px; height: 180px;
