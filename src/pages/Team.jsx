@@ -74,6 +74,14 @@ const MEMBERS = [
     background: "Sandra holds a Bachelor's degree in Procurement and Supply Chain Management from the University of Education, Ghana. She works as a Logistics Coordinator at MGA Consulting Ghana Ltd.",
     function: "Sandra applies her procurement and logistics expertise to keep the program's day-to-day operations running smoothly.",
   },
+  {
+    id: 'emmanuel-danquah',
+    name: 'Emmanuel Danquah',
+    role: 'Graphics Designer',
+    image: '/team/emmanuel-danquah.jpg',
+    background: 'Emmanuel has served as a Digital Marketing Manager and National Creative Director at organizations including Zonda Tec Ghana Limited and TECNO Mobile Ghana, with expertise in Adobe-based print and digital design, branding, and visual storytelling.',
+    function: "Emmanuel brings his graphic design and creative direction experience to N2I, shaping the visual materials and brand identity behind the organisation's marketing and outreach.",
+  },
 ];
 
 export default function Team() {

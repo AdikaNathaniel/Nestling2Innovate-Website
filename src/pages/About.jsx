@@ -190,6 +190,14 @@ export default function About() {
               <h3>Sandra Boakye Boaitey</h3>
               <div className="role">Operations Manager</div>
             </Reveal>
+
+            <Reveal variant="drop" delay={0.96} className="team-card">
+              <Link to="/team#emmanuel-danquah">
+                <img src="/team/emmanuel-danquah.jpg" alt="Emmanuel Danquah" />
+              </Link>
+              <h3>Emmanuel Danquah</h3>
+              <div className="role">Graphics Designer</div>
+            </Reveal>
           </div>
         </div>
       </section>
