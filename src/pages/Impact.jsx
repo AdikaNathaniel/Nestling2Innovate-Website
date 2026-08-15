@@ -54,7 +54,7 @@ export default function Impact() {
         <div className="container">
           <div className="hero-content">
             <h1 className="nowrap-heading">From Four Pilots to a Precedent</h1>
-            <p>What we've proven since 2025 — and why it's the foundation for everything N2I is scaling into next.</p>
+            <p>What we've proven since 2025, and why it's the foundation for everything N2I is scaling into next.</p>
           </div>
         </div>
       </section>

@@ -24,7 +24,7 @@ export default function GetInvolved() {
         <div className="container">
           <div className="hero-content">
             <h1 className="nowrap-heading">Three Ways to Move This Mission Forward</h1>
-            <p>Whether you're a learner, a mentor, or an organisation — there's a place for you in N2I's next chapter.</p>
+            <p>Whether you're a learner, a mentor, or an organisation, there's a place for you in N2I's next chapter.</p>
           </div>
         </div>
       </section>

@@ -24,7 +24,7 @@ export default function About() {
         <div className="container">
           <div className="hero-content">
             <h1 className="nowrap-heading">Our Story, Mission &amp; the People Behind N2I</h1>
-            <p>From a Ghana-registered foundation to a growing pipeline of STEM, digital and AI talent — here's who we are and why we do this work.</p>
+            <p>From a Ghana-registered foundation to a growing pipeline of STEM, digital and AI talent, here's who we are and why we do this work.</p>
           </div>
         </div>
       </section>
