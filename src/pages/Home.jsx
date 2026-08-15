@@ -12,7 +12,7 @@ export default function Home() {
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
-            <h1>Nurturing Ghana's Next Generation of Innovators</h1>
+            <h1 className="nowrap-heading">Nurturing Ghana's Next Generation of Innovators</h1>
             <p>
               N2I delivers STEM, digital skills, and artificial intelligence education to school-age
               children and out-of-school youth in under-resourced communities — building a permanent
