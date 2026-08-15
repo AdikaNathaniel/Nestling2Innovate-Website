@@ -100,6 +100,10 @@ export default function Footer() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+
+        <div className="footer-bottom">
+          <span>Copyright &copy; {new Date().getFullYear()} Nestling 2Innovate. All Rights Reserved.</span>
+        </div>
       </div>
     </footer>
   );

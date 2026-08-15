@@ -15,7 +15,7 @@ const MEMBERS = [
     name: 'Samuel Etsiakoh',
     role: 'Founder and Director',
     image: '/team/samueletsiakohdp.jpg.jpeg',
-    background: 'Samuel holds degrees in computer science and information systems and completed a Google × MLT Tech Fellowship. They also mentored Android developers through Google\'s partnership programme with Andela.',
+    background: 'Samuel holds degrees in computer science and information systems and completed a Google × MLT Tech Fellowship. He also mentored Android developers through Google\'s partnership programme with Andela.',
     function: 'Samuel founded and leads Nestling 2Innovate, building the "Nestling → Fledgling → Eagle" learner pathway that teaches web development, programming, and AI to JHS students and SHS graduates.',
   },
   {
@@ -23,7 +23,7 @@ const MEMBERS = [
     name: 'Edwin Kpodzro',
     role: 'Director of Innovation and Growth',
     image: '/team/edwin-kpodzro.png',
-    background: 'Edwin holds a Ph.D. and an M.S. in Mechanical Engineering from Purdue University. They serve as a Senior Associate at Innosight, the growth strategy firm cofounded by Clayton Christensen, and were named one of 100 global youth leaders at the 2021 Youth Ag Summit.',
+    background: 'Edwin holds a Ph.D. and an M.S. in Mechanical Engineering from Purdue University. He serves as a Senior Associate at Innosight, the growth strategy firm cofounded by Clayton Christensen, and was named one of 100 global youth leaders at the 2021 Youth Ag Summit.',
     function: "Edwin guides N2I's growth from pilot programs into a lasting, scalable innovation pipeline for Ghana's learners.",
   },
   {
@@ -31,7 +31,7 @@ const MEMBERS = [
     name: 'Surya J S',
     role: 'Grant Manager',
     image: '/team/surya-js.jpeg',
-    background: 'Surya holds a B.A. in English Literature and is certified in Business Analysis, Project Management, Data Analysis, and Generative AI by Microsoft and LinkedIn. They have served as Head of Customer Success, Head of Product Research, and UX Researcher, with experience supporting startups and nonprofits.',
+    background: 'Surya holds a B.A. in English Literature and is certified in Business Analysis, Project Management, Data Analysis, and Generative AI by Microsoft and LinkedIn. She has served as Head of Customer Success, Head of Product Research, and UX Researcher, with experience supporting startups and nonprofits.',
     function: 'Surya supports executive operations, grant research, funding strategy, project coordination, partnership development, and organizational growth at N2I.',
   },
   {
@@ -55,7 +55,7 @@ const MEMBERS = [
     name: 'Chioma Osanebi',
     role: 'Social Media Manager',
     image: '/team/chioma-osanebi.jpeg',
-    background: 'Chioma is a Computer Science student at Lancaster University Ghana and President of its Computer Science Society. They previously worked as a Frontend Developer intern at Future Interns.',
+    background: 'Chioma is a Computer Science student at Lancaster University Ghana and President of its Computer Science Society. She previously worked as a Frontend Developer intern at Future Interns.',
     function: "Chioma shapes how N2I tells its story online, sharing learner milestones, program updates, and community impact to grow visibility and support for the mission.",
   },
   {
@@ -63,7 +63,7 @@ const MEMBERS = [
     name: 'Mina Ama Mokani',
     role: 'Diversity, Equity & Inclusion Coordinator',
     image: '/team/mina-ama-mokani.jpeg',
-    background: 'Mina is a Psychology graduate of the University of Cape Coast and a Behavioral Therapist. They founded SpecCare Development Center and the Renewed Roses Foundation.',
+    background: 'Mina is a Psychology graduate of the University of Cape Coast and a Behavioral Therapist. She founded SpecCare Development Center and the Renewed Roses Foundation.',
     function: 'Mina helps ensure the program stays accessible, supportive, and welcoming for every learner, regardless of background or ability.',
   },
   {

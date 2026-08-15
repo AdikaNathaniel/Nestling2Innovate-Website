@@ -128,49 +128,65 @@ export default function About() {
 
           <div className="team-grid">
             <Reveal variant="drop" delay={0} className="team-card">
-              <img src="/team/samueletsiakohdp.jpg.jpeg" alt="Samuel Etsiakoh" />
+              <Link to="/team#samuel-etsiakoh">
+                <img src="/team/samueletsiakohdp.jpg.jpeg" alt="Samuel Etsiakoh" />
+              </Link>
               <h3>Samuel Etsiakoh</h3>
               <div className="role">Founder and Director</div>
             </Reveal>
 
             <Reveal variant="drop" delay={0.12} className="team-card">
-              <img src="/team/edwin-kpodzro.png" alt="Edwin Kpodzro" />
+              <Link to="/team#edwin-kpodzro">
+                <img src="/team/edwin-kpodzro.png" alt="Edwin Kpodzro" />
+              </Link>
               <h3>Edwin Kpodzro</h3>
               <div className="role">Director of Innovation and Growth</div>
             </Reveal>
 
             <Reveal variant="drop" delay={0.24} className="team-card">
-              <img src="/team/surya-js.jpeg" alt="Surya J S" />
+              <Link to="/team#surya-js">
+                <img src="/team/surya-js.jpeg" alt="Surya J S" />
+              </Link>
               <h3>Surya J S</h3>
               <div className="role">Grant Manager</div>
             </Reveal>
 
             <Reveal variant="drop" delay={0.36} className="team-card">
-              <img src="/team/mawunyo-kwasi-kutor.jpeg" alt="Mawunyo Kwasi Kutor" />
+              <Link to="/team#mawunyo-kwasi-kutor">
+                <img src="/team/mawunyo-kwasi-kutor.jpeg" alt="Mawunyo Kwasi Kutor" />
+              </Link>
               <h3>Mawunyo Kwasi Kutor</h3>
               <div className="role">Digital Skills Trainer</div>
             </Reveal>
 
             <Reveal variant="drop" delay={0.48} className="team-card">
-              <img src="/team/nathaniel-adika.jpeg" alt="Nathaniel Adika" />
+              <Link to="/team#nathaniel-adika">
+                <img src="/team/nathaniel-adika.jpeg" alt="Nathaniel Adika" />
+              </Link>
               <h3>Nathaniel Adika</h3>
               <div className="role">Digital Skills Trainer</div>
             </Reveal>
 
             <Reveal variant="drop" delay={0.6} className="team-card">
-              <img src="/team/chioma-osanebi.jpeg" alt="Chioma Osanebi" />
+              <Link to="/team#chioma-osanebi">
+                <img src="/team/chioma-osanebi.jpeg" alt="Chioma Osanebi" />
+              </Link>
               <h3>Chioma Osanebi</h3>
               <div className="role">Social Media Manager</div>
             </Reveal>
 
             <Reveal variant="drop" delay={0.72} className="team-card">
-              <img src="/team/mina-ama-mokani.jpeg" alt="Mina Ama Mokani" />
+              <Link to="/team#mina-ama-mokani">
+                <img src="/team/mina-ama-mokani.jpeg" alt="Mina Ama Mokani" />
+              </Link>
               <h3>Mina Ama Mokani</h3>
               <div className="role">Diversity, Equity &amp; Inclusion Coordinator</div>
             </Reveal>
 
             <Reveal variant="drop" delay={0.84} className="team-card">
-              <img src="/team/sandra-boakye-boaitey.jpeg" alt="Sandra Boakye Boaitey" />
+              <Link to="/team#sandra-boakye-boaitey">
+                <img src="/team/sandra-boakye-boaitey.jpeg" alt="Sandra Boakye Boaitey" />
+              </Link>
               <h3>Sandra Boakye Boaitey</h3>
               <div className="role">Operations Manager</div>
             </Reveal>
