@@ -3,6 +3,15 @@ import { Link } from 'react-router-dom';
 import HeroSlideshow from '../components/HeroSlideshow.jsx';
 import StatNumber from '../components/StatNumber.jsx';
 import Reveal from '../components/Reveal.jsx';
+import TypewriterHeading from '../components/TypewriterHeading.jsx';
+
+const HOME_HEADLINES = [
+  "Nurturing Ghana's Next Generation of Innovators",
+  "Empowering Ghana's Youth Through STEM and AI",
+  'Turning Curiosity Into Real-World Innovation',
+  "Building Ghana's Future, One Learner at a Time",
+  'From Under-Resourced Communities to Tech Careers',
+];
 
 export default function Home() {
   return (
@@ -12,7 +21,7 @@ export default function Home() {
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
-            <h1 className="nowrap-heading">Nurturing Ghana's Next Generation of Innovators</h1>
+            <TypewriterHeading as="h1" className="nowrap-heading" phrases={HOME_HEADLINES} />
             <p>
               STEM, digital, and AI education for underserved youth in Ghana, building a permanent
               Community STEM Innovation Centre, one learner at a time.

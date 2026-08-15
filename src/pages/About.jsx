@@ -2,6 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Reveal from '../components/Reveal.jsx';
 import HeroSlideshow from '../components/HeroSlideshow.jsx';
+import TypewriterHeading from '../components/TypewriterHeading.jsx';
+
+const STORY_HEADLINES = [
+  'Our Story, Mission & the People Behind N2I',
+  'Our Mission, Our Roots, Our Growing Team',
+  'The Foundation, the Vision, the People',
+  "Where BEEVIF's Story Meets N2I's Mission",
+  "Meet the Team Building Ghana's Future",
+];
 
 const ABOUT_SLIDES = [
   '/images/about-students-classroom.jpg',
@@ -23,7 +32,7 @@ export default function About() {
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
-            <h1 className="nowrap-heading">Our Story, Mission &amp; the People Behind N2I</h1>
+            <TypewriterHeading as="h1" className="nowrap-heading" phrases={STORY_HEADLINES} />
             <p>From a Ghana-registered foundation to a growing pipeline of STEM, digital and AI talent, here's who we are and why we do this work.</p>
           </div>
         </div>

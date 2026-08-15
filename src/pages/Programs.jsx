@@ -2,6 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Reveal from '../components/Reveal.jsx';
 import HeroSlideshow from '../components/HeroSlideshow.jsx';
+import TypewriterHeading from '../components/TypewriterHeading.jsx';
+
+const PROGRAMS_HEADLINES = [
+  'From First Click to Real-World Capability',
+  'From Curiosity to Career-Ready Skills',
+  'Four Pathways to Digital Mastery',
+  'Where Learning Meets Real Application',
+  'Building Skills That Open Real Doors',
+];
 
 const PROGRAMS_SLIDES = [
   '/images/programs-students-classroom.jpg',
@@ -23,7 +32,7 @@ export default function Programs() {
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
-            <h1 className="nowrap-heading">From First Click to Real-World Capability</h1>
+            <TypewriterHeading as="h1" className="nowrap-heading" phrases={PROGRAMS_HEADLINES} />
             <p>Four proof-of-concept programs, run since 2025, now scaling into a structured digital-and-AI skills pipeline.</p>
           </div>
         </div>

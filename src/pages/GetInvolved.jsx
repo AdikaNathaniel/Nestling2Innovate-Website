@@ -2,6 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Reveal from '../components/Reveal.jsx';
 import HeroSlideshow from '../components/HeroSlideshow.jsx';
+import TypewriterHeading from '../components/TypewriterHeading.jsx';
+
+const GET_INVOLVED_HEADLINES = [
+  'Three Ways to Move This Mission Forward',
+  'Learn, Mentor, or Partner With Us',
+  "Join the Movement Shaping Ghana's Future",
+  "Your Role in N2I's Next Chapter",
+  'Three Paths, One Shared Mission',
+];
 
 const GET_INVOLVED_SLIDES = [
   '/images/impact-graduation-celebration.jpg',
@@ -23,7 +32,7 @@ export default function GetInvolved() {
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
-            <h1 className="nowrap-heading">Three Ways to Move This Mission Forward</h1>
+            <TypewriterHeading as="h1" className="nowrap-heading" phrases={GET_INVOLVED_HEADLINES} />
             <p>Whether you're a learner, a mentor, or an organisation, there's a place for you in N2I's next chapter.</p>
           </div>
         </div>

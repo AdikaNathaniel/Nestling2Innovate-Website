@@ -4,6 +4,15 @@ import Reveal from '../components/Reveal.jsx';
 import StatNumber from '../components/StatNumber.jsx';
 import Marquee from '../components/Marquee.jsx';
 import HeroSlideshow from '../components/HeroSlideshow.jsx';
+import TypewriterHeading from '../components/TypewriterHeading.jsx';
+
+const IMPACT_HEADLINES = [
+  'From Four Pilots to a Precedent',
+  'Proof That This Model Works',
+  'Small Cohorts, Measurable Results',
+  "Building Evidence for What's Next",
+  'From Pilot Programs to Lasting Change',
+];
 
 const IMPACT_SLIDES = [
   '/images/latest-images/3.jpeg',
@@ -53,7 +62,7 @@ export default function Impact() {
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
-            <h1 className="nowrap-heading">From Four Pilots to a Precedent</h1>
+            <TypewriterHeading as="h1" className="nowrap-heading" phrases={IMPACT_HEADLINES} />
             <p>What we've proven since 2025, and why it's the foundation for everything N2I is scaling into next.</p>
           </div>
         </div>
