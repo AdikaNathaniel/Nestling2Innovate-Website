@@ -162,11 +162,11 @@ export default function Impact() {
           </Reveal>
 
           <Reveal variant="drop" delay={0.3} as="div" className="news-item">
-            <img src="/images/programs-innovation-centre-lab.jpg" alt="Concept image for the Community STEM Innovation Centre" />
+            <img src="/news/jeff.jpeg" alt="Jeff, N2I AI Literacy participant" />
             <div>
-              <div className="date">2025</div>
-              <h3>Scaling Toward a Permanent Innovation Centre</h3>
-              <p>Following four successful proof-of-concept programs, N2I is moving from pilots to a permanent Community STEM Innovation Centre and a structured digital-and-AI skills pipeline.</p>
+              <div className="date">2026 &middot; Learner Spotlight</div>
+              <h3>N2I Learner Spotlight: Jeff</h3>
+              <p>Jeff, 14, completed his BECE at another school before joining N2I. He's now learning Artificial Intelligence, currently working through a lesson on colour detection.</p>
             </div>
           </Reveal>
 
