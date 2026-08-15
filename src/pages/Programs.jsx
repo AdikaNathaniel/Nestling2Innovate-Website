@@ -18,12 +18,12 @@ const PROGRAMS_SLIDES = [
 export default function Programs() {
   return (
     <>
-      <section className="page-header">
+      <section className="page-header page-header-wide">
         <HeroSlideshow slides={PROGRAMS_SLIDES} />
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
-            <h1>From First Click to Real-World Capability</h1>
+            <h1 className="nowrap-heading">From First Click to Real-World Capability</h1>
             <p>Four proof-of-concept programs, run since 2025, now scaling into a structured digital-and-AI skills pipeline.</p>
           </div>
         </div>

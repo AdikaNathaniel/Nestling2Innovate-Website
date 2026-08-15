@@ -18,12 +18,12 @@ const GET_INVOLVED_SLIDES = [
 export default function GetInvolved() {
   return (
     <>
-      <section className="page-header">
+      <section className="page-header page-header-wide">
         <HeroSlideshow slides={GET_INVOLVED_SLIDES} />
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
-            <h1>Three Ways to Move This Mission Forward</h1>
+            <h1 className="nowrap-heading">Three Ways to Move This Mission Forward</h1>
             <p>Whether you're a learner, a mentor, or an organisation — there's a place for you in N2I's next chapter.</p>
           </div>
         </div>

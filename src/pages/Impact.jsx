@@ -48,12 +48,12 @@ function TestimonialCard({ t }) {
 export default function Impact() {
   return (
     <>
-      <section className="page-header">
+      <section className="page-header page-header-wide">
         <HeroSlideshow slides={IMPACT_SLIDES} />
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
-            <h1>From Four Pilots to a Precedent</h1>
+            <h1 className="nowrap-heading">From Four Pilots to a Precedent</h1>
             <p>What we've proven since 2025 — and why it's the foundation for everything N2I is scaling into next.</p>
           </div>
         </div>

@@ -18,12 +18,12 @@ const ABOUT_SLIDES = [
 export default function About() {
   return (
     <>
-      <section className="page-header">
+      <section className="page-header page-header-wide">
         <HeroSlideshow slides={ABOUT_SLIDES} />
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
-            <h1>Our Story, Mission &amp; the People Behind N2I</h1>
+            <h1 className="nowrap-heading">Our Story, Mission &amp; the People Behind N2I</h1>
             <p>From a Ghana-registered foundation to a growing pipeline of STEM, digital and AI talent — here's who we are and why we do this work.</p>
           </div>
         </div>
