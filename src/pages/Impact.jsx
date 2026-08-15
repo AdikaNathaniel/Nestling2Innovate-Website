@@ -134,6 +134,7 @@ export default function Impact() {
             <Reveal as="h2" variant="slide-right" delay={0.08}>What's Next for N2I</Reveal>
           </div>
 
+          <div className="news-grid">
           <Reveal variant="drop" delay={0} as={Link} to="/news/lauren-patterson" className="news-item news-item-link">
             <img src="/news/lauren-patterson.jpg" alt="Lauren Patterson" />
             <div>
@@ -187,6 +188,7 @@ export default function Impact() {
               <p>Plans are underway to expand access to quality STEM and AI education for rural areas with internet constraints.</p>
             </div>
           </Reveal>
+          </div>
         </div>
       </section>
 
