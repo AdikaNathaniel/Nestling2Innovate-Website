@@ -610,7 +610,7 @@ p { color: var(--text-light); }
   overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.news-item img { height: 190px; width: 100%; object-fit: cover; }
+.news-item img { height: 260px; width: 100%; object-fit: cover; }
 .news-item > div { padding: 20px; }
 .news-item .date { color: var(--primary); font-weight: 700; font-size: 0.78rem; text-transform: uppercase; margin-bottom: 6px; }
 
