@@ -83,6 +83,14 @@ const MEMBERS = [
     function: "Sandra applies her procurement and logistics expertise to keep the program's day-to-day operations running smoothly.",
   },
   {
+    id: 'fredrick-stephanie',
+    name: 'Fredrick Stephanie',
+    role: 'Graphics and Website Developer',
+    image: '/team/fredrick-stephanie.jpg',
+    background: 'Fredrick is a Computer Science student at Lancaster University Ghana and the Marketing/Communications Officer for the Computer Science Society. They have experience in graphic design, website development, promotional content design, and video editing.',
+    function: "Fredrick is responsible for designing graphics and promotional materials for N2I's programmes and initiatives, developing and maintaining the N2I website, and supporting the team with visual communication and video content.",
+  },
+  {
     id: 'emmanuel-danquah',
     name: 'Emmanuel Danquah',
     role: 'Graphics Designer',

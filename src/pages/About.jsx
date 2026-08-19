@@ -209,6 +209,14 @@ export default function About() {
             </Reveal>
 
             <Reveal variant="drop" delay={1.08} className="team-card">
+              <Link to="/team#fredrick-stephanie">
+                <img src="/team/fredrick-stephanie.jpg" alt="Fredrick Stephanie" />
+              </Link>
+              <h3>Fredrick Stephanie</h3>
+              <div className="role">Graphics and Website Developer</div>
+            </Reveal>
+
+            <Reveal variant="drop" delay={1.2} className="team-card">
               <Link to="/team#emmanuel-danquah">
                 <img src="/team/emmanuel-danquah.jpg" alt="Emmanuel Danquah" />
               </Link>
