@@ -71,7 +71,7 @@ const MEMBERS = [
     name: 'Sandra Boakye Boaitey',
     role: 'Operations Manager',
     image: '/team/sandra-boakye-boaitey.jpeg',
-    background: "Sandra holds a Bachelor's degree in Procurement and Supply Chain Management from the University of Education, Ghana. She works as a Logistics Coordinator at MGA Consulting Ghana Ltd.",
+    background: "Sandra holds a Bachelor's degree in Procurement and Supply Chain Management from the University of Education, Ghana. She works as a Procurement/Logistics Manager at Dei Terra Properties.",
     function: "Sandra applies her procurement and logistics expertise to keep the program's day-to-day operations running smoothly.",
   },
   {
