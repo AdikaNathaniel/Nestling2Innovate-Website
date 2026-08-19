@@ -161,6 +161,14 @@ export default function About() {
             </Reveal>
 
             <Reveal variant="drop" delay={0.36} className="team-card">
+              <Link to="/team#xornam-kumordzie">
+                <img src="/team/xornam-kumordzie.jpeg" alt="Xornam Kumordzie" />
+              </Link>
+              <h3>Xornam Kumordzie</h3>
+              <div className="role">Project Coordination and Learning Community Management</div>
+            </Reveal>
+
+            <Reveal variant="drop" delay={0.48} className="team-card">
               <Link to="/team#mawunyo-kwasi-kutor">
                 <img src="/team/mawunyo-kwasi-kutor.jpeg" alt="Mawunyo Kwasi Kutor" />
               </Link>
@@ -168,7 +176,7 @@ export default function About() {
               <div className="role">Digital Skills Trainer</div>
             </Reveal>
 
-            <Reveal variant="drop" delay={0.48} className="team-card">
+            <Reveal variant="drop" delay={0.6} className="team-card">
               <Link to="/team#nathaniel-adika">
                 <img src="/team/nathaniel-adika.jpeg" alt="Nathaniel Adika" />
               </Link>
@@ -176,7 +184,7 @@ export default function About() {
               <div className="role">Digital Skills Trainer</div>
             </Reveal>
 
-            <Reveal variant="drop" delay={0.6} className="team-card">
+            <Reveal variant="drop" delay={0.72} className="team-card">
               <Link to="/team#chioma-osanebi">
                 <img src="/team/chioma-osanebi.jpeg" alt="Chioma Osanebi" />
               </Link>
@@ -184,7 +192,7 @@ export default function About() {
               <div className="role">Social Media Manager</div>
             </Reveal>
 
-            <Reveal variant="drop" delay={0.72} className="team-card">
+            <Reveal variant="drop" delay={0.84} className="team-card">
               <Link to="/team#mina-ama-mokani">
                 <img src="/team/mina-ama-mokani.jpeg" alt="Mina Ama Mokani" />
               </Link>
@@ -192,7 +200,7 @@ export default function About() {
               <div className="role">Diversity, Equity &amp; Inclusion Coordinator</div>
             </Reveal>
 
-            <Reveal variant="drop" delay={0.84} className="team-card">
+            <Reveal variant="drop" delay={0.96} className="team-card">
               <Link to="/team#sandra-boakye-boaitey">
                 <img src="/team/sandra-boakye-boaitey.jpeg" alt="Sandra Boakye Boaitey" />
               </Link>
@@ -200,7 +208,7 @@ export default function About() {
               <div className="role">Operations Manager</div>
             </Reveal>
 
-            <Reveal variant="drop" delay={0.96} className="team-card">
+            <Reveal variant="drop" delay={1.08} className="team-card">
               <Link to="/team#emmanuel-danquah">
                 <img src="/team/emmanuel-danquah.jpg" alt="Emmanuel Danquah" />
               </Link>

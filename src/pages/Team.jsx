@@ -35,6 +35,14 @@ const MEMBERS = [
     function: 'Surya supports executive operations, grant research, funding strategy, project coordination, partnership development, and organizational growth at N2I.',
   },
   {
+    id: 'xornam-kumordzie',
+    name: 'Xornam Kumordzie',
+    role: 'Project Coordination and Learning Community Management',
+    image: '/team/xornam-kumordzie.jpeg',
+    background: 'Xornam holds a Bachelor of Education (B.Ed.) and a Master of Education (M.Ed.) in Mathematics Education, along with a TEFL Certificate and training in Cambridge Teacher Training and Classroom Management.',
+    function: 'Xornam serves as an Educator/Facilitator at N2I, supporting learners through digital skills training, mentoring, and educational activities that equip young people with relevant knowledge and skills to thrive in the digital age.',
+  },
+  {
     id: 'mawunyo-kwasi-kutor',
     name: 'Mawunyo Kwasi Kutor',
     role: 'Digital Skills Trainer',
