@@ -43,6 +43,14 @@ const MEMBERS = [
     function: 'Xornam serves as an Educator/Facilitator at N2I, supporting learners through digital skills training, mentoring, and educational activities that equip young people with relevant knowledge and skills to thrive in the digital age.',
   },
   {
+    id: 'prince-kweku-entsie',
+    name: 'Prince Kweku Entsie',
+    role: 'Program Advisor',
+    image: '/team/prince-kweku-entsie.jpeg',
+    background: "Prince holds a Master's degree in Education Management and Administration.",
+    function: 'Prince provides educational consultation for N2I, advising on program design and academic direction.',
+  },
+  {
     id: 'mawunyo-kwasi-kutor',
     name: 'Mawunyo Kwasi Kutor',
     role: 'Digital Skills Trainer',
@@ -85,7 +93,7 @@ const MEMBERS = [
   {
     id: 'fredrick-stephanie',
     name: 'Fredrick Stephanie',
-    role: 'Graphics and Website Developer',
+    role: 'Graphics Designer and Website Developer',
     image: '/team/fredrick-stephanie.jpg',
     background: 'Fredrick is a Computer Science student at Lancaster University Ghana and the Marketing/Communications Officer for the Computer Science Society. They have experience in graphic design, website development, promotional content design, and video editing.',
     function: "Fredrick is responsible for designing graphics and promotional materials for N2I's programmes and initiatives, developing and maintaining the N2I website, and supporting the team with visual communication and video content.",
