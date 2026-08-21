@@ -137,7 +137,7 @@ p { color: var(--text-light); }
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
-  gap: 20px;
+  gap: 32px;
 }
 
 .brand {
@@ -195,9 +195,9 @@ p { color: var(--text-light); }
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 10px 16px;
+  padding: 10px 14px;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1rem;
   border-radius: 8px;
   color: var(--text);
   white-space: nowrap;
