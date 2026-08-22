@@ -56,7 +56,7 @@ export default function Home() {
           <div className="grid grid-2">
             <Reveal variant="drop" delay={0}>
               <div className="card">
-                <img src="/images/programs-webdesign-woman-laptop.jpg" alt="Learner working on a web development project" />
+                <img src="/images/web-development.jpg" alt="Web development track" />
                 <div className="card-body">
                   <span className="card-tag">Track</span>
                   <h3>Web Development</h3>
@@ -66,7 +66,7 @@ export default function Home() {
             </Reveal>
             <Reveal variant="drop" delay={0.12}>
               <div className="card">
-                <img src="/images/programs-ai-literacy-boy-laptop.jpg" alt="Learner exploring AI and machine learning tools" />
+                <img src="/images/machine-learning.jpg" alt="AI and machine learning track" />
                 <div className="card-body">
                   <span className="card-tag">Track</span>
                   <h3>AI &amp; Machine Learning</h3>
