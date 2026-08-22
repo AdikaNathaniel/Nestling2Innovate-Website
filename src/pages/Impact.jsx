@@ -24,6 +24,11 @@ const IMPACT_SLIDES = [
   '/images/latest-images/4.jpeg',
   '/images/students_1.jpg',
   '/images/latest-images/1.jpeg',
+  '/images/st_1.jpg',
+  '/images/st_2.jpg',
+  '/images/st_3.jpg',
+  '/images/st_4.jpg',
+  '/images/st_5.jpg',
 ];
 
 const TESTIMONIALS = [

@@ -22,6 +22,11 @@ const ABOUT_SLIDES = [
   '/images/home-hero-family.jpg',
   '/images/latest-images/2.jpeg',
   '/images/latest-images/3.jpeg',
+  '/images/st_1.jpg',
+  '/images/st_2.jpg',
+  '/images/st_3.jpg',
+  '/images/st_4.jpg',
+  '/images/st_5.jpg',
 ];
 
 export default function About() {

@@ -22,6 +22,11 @@ const GET_INVOLVED_SLIDES = [
   '/images/programs-students-classroom.jpg',
   '/images/latest-images/3.jpeg',
   '/images/latest-images/2.jpeg',
+  '/images/st_1.jpg',
+  '/images/st_2.jpg',
+  '/images/st_3.jpg',
+  '/images/st_4.jpg',
+  '/images/st_5.jpg',
 ];
 
 export default function GetInvolved() {
