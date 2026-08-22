@@ -27,7 +27,7 @@ export default function Home() {
               Community STEM Innovation Centre, one learner at a time.
             </p>
             <div className="hero-actions">
-              <Link to="/get-involved#apply" className="btn btn-primary">Apply / Enrol</Link>
+              <a href="https://forms.gle/kovJ3zyfEfLgdRFT9" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Apply / Enrol</a>
               <Link to="/get-involved#donate" className="btn btn-outline">Support Our Mission</Link>
             </div>
           </div>
@@ -38,6 +38,51 @@ export default function Home() {
             <div><span className="num">Early</span><span className="lbl">Among Ghana's First Gemini AI Certified K12 Students</span></div>
             <div><span className="num">Upcoming</span><span className="lbl">New Programs Coming Soon</span></div>
           </div>
+        </div>
+      </section>
+
+      <section className="section-tint">
+        <div className="container">
+          <div className="section-head section-head-wide">
+            <Reveal as="span" variant="slide-left" className="eyebrow">Now Enrolling</Reveal>
+            <Reveal as="h2" variant="slide-right" delay={0.08}>A Free Tech Training Opportunity for Ghana's Next Innovators</Reveal>
+            <Reveal as="p" variant="fade" delay={0.18}>
+              N2I, an initiative of BEEVIF International, is opening a 100% free, fully online
+              technology training programme for JHS students and SHS graduates in Ghana — no fees,
+              just a PC and an internet connection.
+            </Reveal>
+          </div>
+
+          <div className="grid grid-2">
+            <Reveal variant="drop" delay={0}>
+              <div className="card">
+                <div className="card-body">
+                  <span className="card-tag">Track</span>
+                  <h3>Web Development</h3>
+                  <p>Learn to build modern websites and applications from the ground up.</p>
+                </div>
+              </div>
+            </Reveal>
+            <Reveal variant="drop" delay={0.12}>
+              <div className="card">
+                <div className="card-body">
+                  <span className="card-tag">Track</span>
+                  <h3>AI &amp; Machine Learning</h3>
+                  <p>Explore AI concepts and build intelligent solutions with hands-on guidance.</p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+
+          <Reveal variant="fade" delay={0.2} className="info-box" style={{ marginTop: 28 }}>
+            <strong>100% free</strong> · Fully online, learn from anywhere &middot; Limited to just 100 learners
+            <br />
+            <strong>Registration deadline:</strong> August 31, 2026 &nbsp;|&nbsp; <strong>Cohort begins:</strong> September 3, 2026
+          </Reveal>
+
+          <Reveal variant="fade" delay={0.3} style={{ marginTop: 24 }}>
+            <a href="https://forms.gle/kovJ3zyfEfLgdRFT9" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Register Now</a>
+          </Reveal>
         </div>
       </section>
 

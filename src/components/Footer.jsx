@@ -69,7 +69,7 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Get Involved</h4>
             <ul>
-              <li><Link to="/get-involved#apply">Apply / Enrol</Link></li>
+              <li><a href="https://forms.gle/kovJ3zyfEfLgdRFT9" target="_blank" rel="noopener noreferrer">Apply / Enrol</a></li>
               <li><a href="https://forms.gle/4ry4xDKefR5ZzRRe9" target="_blank" rel="noopener noreferrer">Volunteer &amp; Mentor</a></li>
               <li><Link to="/get-involved#partner">Partner With Us</Link></li>
               <li><Link to="/get-involved#donate">Donate</Link></li>

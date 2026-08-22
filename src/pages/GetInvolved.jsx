@@ -44,6 +44,10 @@ export default function GetInvolved() {
             <Reveal as="span" variant="slide-left" className="eyebrow">For Learners</Reveal>
             <Reveal as="h2" variant="slide-right" delay={0.08}>Apply / Enrol</Reveal>
             <Reveal as="p" variant="fade" delay={0.18}>N2I welcomes school-age children, out-of-school youth, and Senior High School graduates from the SGA campus and neighbouring communities.</Reveal>
+            <Reveal as="p" variant="fade" delay={0.24}>
+              A new cohort is open now: a 100% free, fully online Web Development or AI &amp; Machine
+              Learning track for JHS students and SHS graduates in Ghana, limited to 100 learners.
+            </Reveal>
           </div>
           <div className="involve-grid">
             <Reveal variant="drop" delay={0} className="involve-card">
@@ -66,8 +70,12 @@ export default function GetInvolved() {
             </Reveal>
           </div>
           <div className="info-box" style={{ marginTop: 28 }}>
-            <strong>Note:</strong> Online enrolment is coming soon. For now, applications are handled directly —
-            use the buttons above or the contact details in our footer to reach the N2I team.
+            <strong>Registration deadline:</strong> August 31, 2026 &nbsp;|&nbsp; <strong>Cohort begins:</strong> September 3, 2026
+            <br />
+            Register online now via the form below, or use the buttons above or the contact details in our footer to reach the N2I team.
+          </div>
+          <div style={{ marginTop: 20 }}>
+            <a href="https://forms.gle/kovJ3zyfEfLgdRFT9" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Register Now</a>
           </div>
         </div>
       </section>
