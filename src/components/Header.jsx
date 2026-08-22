@@ -27,8 +27,8 @@ const NAV = [
     label: 'Get Involved',
     to: '/get-involved',
     items: [
-      { label: 'Apply / Enrol', to: 'https://forms.gle/kovJ3zyfEfLgdRFT9', external: true },
-      { label: 'Volunteer & Mentor', to: 'https://forms.gle/4ry4xDKefR5ZzRRe9', external: true },
+      { label: 'Apply / Enrol', to: '/get-involved#apply' },
+      { label: 'Volunteer & Mentor', to: '/get-involved#volunteer' },
       { label: 'Partner With Us', to: '/get-involved#partner' },
       { label: 'Donate', to: '/get-involved#donate' },
     ],
