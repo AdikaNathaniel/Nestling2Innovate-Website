@@ -169,7 +169,7 @@ export default function Home() {
       <section>
         <div className="container split reverse">
           <Reveal as="img" variant="right" delay={0.1}
-            src="/images/impact-graduation-celebration.jpg"
+            src="/images/students_2.jpg"
             alt="Learners celebrating a milestone achievement" />
           <Reveal variant="left">
             <span className="eyebrow">Our Impact</span>

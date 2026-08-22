@@ -19,7 +19,7 @@ const PROGRAMS_SLIDES = [
   '/images/latest-images/3.jpeg',
   '/images/about-students-classroom.jpg',
   '/images/latest-images/5.jpeg',
-  '/images/impact-graduation-celebration.jpg',
+  '/images/students_1.jpg',
   '/images/latest-images/1.jpeg',
   '/images/latest-images/4.jpeg',
 ];

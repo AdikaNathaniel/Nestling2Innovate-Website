@@ -5,7 +5,7 @@ import HeroSlideshow from '../components/HeroSlideshow.jsx';
 import Marquee from '../components/Marquee.jsx';
 
 const STORY_SLIDES = [
-  '/images/impact-graduation-celebration.jpg',
+  '/images/students_1.jpg',
   '/images/latest-images/1.jpeg',
   '/images/programs-webdesign-woman-laptop.jpg',
 ];

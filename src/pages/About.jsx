@@ -15,7 +15,7 @@ const STORY_HEADLINES = [
 const ABOUT_SLIDES = [
   '/images/about-students-classroom.jpg',
   '/images/latest-images/4.jpeg',
-  '/images/impact-graduation-celebration.jpg',
+  '/images/students_1.jpg',
   '/images/latest-images/1.jpeg',
   '/images/programs-students-classroom.jpg',
   '/images/latest-images/5.jpeg',

@@ -13,7 +13,7 @@ const GET_INVOLVED_HEADLINES = [
 ];
 
 const GET_INVOLVED_SLIDES = [
-  '/images/impact-graduation-celebration.jpg',
+  '/images/students_1.jpg',
   '/images/latest-images/5.jpeg',
   '/images/home-hero-family.jpg',
   '/images/latest-images/4.jpeg',
