@@ -13,20 +13,20 @@ const PROGRAMS_HEADLINES = [
 ];
 
 const PROGRAMS_SLIDES = [
+  '/images/st_2.jpg',
   '/images/programs-students-classroom.jpg',
-  '/images/latest-images/2.jpeg',
-  '/images/home-hero-family.jpg',
   '/images/latest-images/3.jpeg',
   '/images/about-students-classroom.jpg',
-  '/images/latest-images/5.jpeg',
-  '/images/students_1.jpg',
-  '/images/latest-images/1.jpeg',
-  '/images/latest-images/4.jpeg',
-  '/images/st_1.jpg',
-  '/images/st_2.jpg',
-  '/images/st_3.jpg',
-  '/images/st_4.jpg',
   '/images/st_5.jpg',
+  '/images/latest-images/1.jpeg',
+  '/images/home-hero-family.jpg',
+  '/images/st_3.jpg',
+  '/images/latest-images/4.jpeg',
+  '/images/students_1.jpg',
+  '/images/st_1.jpg',
+  '/images/latest-images/2.jpeg',
+  '/images/latest-images/5.jpeg',
+  '/images/st_4.jpg',
 ];
 
 export default function Programs() {
