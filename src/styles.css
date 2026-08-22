@@ -77,7 +77,8 @@ p { color: var(--text-light); }
   text-align: center;
 }
 .section-head.section-head-wide { max-width: min(1000px, 92vw); }
-.section-head.section-head-left { max-width: none; margin-left: 0; margin-right: 0; text-align: left; }
+.section-head.section-head-left { max-width: none; margin-left: 0; margin-right: 0; }
+.section-head.section-head-left p { text-align: left; }
 
 .section-head p { margin-top: 12px; font-size: 1.25rem; }
 
