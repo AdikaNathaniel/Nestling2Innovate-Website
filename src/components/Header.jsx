@@ -28,7 +28,7 @@ const NAV = [
     to: '/get-involved',
     items: [
       { label: 'Apply / Enrol', to: '/get-involved#apply' },
-      { label: 'Volunteer & Mentor', to: '/get-involved#volunteer' },
+      { label: 'Volunteer & Mentor', to: 'https://forms.gle/4ry4xDKefR5ZzRRe9', external: true },
       { label: 'Partner With Us', to: '/get-involved#partner' },
       { label: 'Donate', to: '/get-involved#donate' },
     ],
@@ -103,11 +103,17 @@ export default function Header() {
                 </NavLink>
                 {item.items && (
                   <div className="dropdown">
-                    {item.items.map((sub) => (
-                      <Link key={sub.label} to={sub.to} onClick={closeAll}>
-                        {sub.label}
-                      </Link>
-                    ))}
+                    {item.items.map((sub) =>
+                      sub.external ? (
+                        <a key={sub.label} href={sub.to} target="_blank" rel="noopener noreferrer" onClick={closeAll}>
+                          {sub.label}
+                        </a>
+                      ) : (
+                        <Link key={sub.label} to={sub.to} onClick={closeAll}>
+                          {sub.label}
+                        </Link>
+                      )
+                    )}
                   </div>
                 )}
               </li>

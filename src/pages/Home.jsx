@@ -147,7 +147,7 @@ export default function Home() {
             <p>Your support funds classrooms, devices, and connectivity for learners in Accra and rural communities beyond it.</p>
             <div className="hero-actions">
               <Link to="/get-involved#donate" className="btn btn-primary">Donate Now</Link>
-              <Link to="/get-involved#volunteer" className="btn btn-outline">Volunteer / Mentor</Link>
+              <a href="https://forms.gle/4ry4xDKefR5ZzRRe9" target="_blank" rel="noopener noreferrer" className="btn btn-outline">Volunteer / Mentor</a>
             </div>
           </div>
         </div>

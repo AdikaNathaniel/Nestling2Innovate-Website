@@ -242,7 +242,7 @@ export default function About() {
               <h2>Want to Join the Team?</h2>
               <p>We're always looking for educators, mentors, and partners who believe in this mission.</p>
               <div className="hero-actions">
-                <Link to="/get-involved#volunteer" className="btn btn-primary">Volunteer With Us</Link>
+                <a href="https://forms.gle/4ry4xDKefR5ZzRRe9" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Volunteer With Us</a>
                 <Link to="/about#contact" className="btn btn-outline">Contact Us</Link>
               </div>
             </div>
