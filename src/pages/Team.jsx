@@ -107,20 +107,20 @@ const MEMBERS = [
     function: "Emmanuel brings his graphic design and creative direction experience to N2I, shaping the visual materials and brand identity behind the organisation's marketing and outreach.",
   },
   {
-    id: 'abdul-rashid-boyefio',
-    name: 'Abdul Rashid Boyefio',
-    role: 'Digital Skills Trainer',
-    image: '/team/abdul-rashid-boyefio.jpeg',
-    background: 'Abdul Rashid holds an NCC Education Level 4 Diploma in Business Information Technology and an NCC Education Level 5 Diploma in Computing with Business Management. He is also a Certified UNESCO Ethics Teacher Trainer, with professional experience spanning IT operations, digital learning, STEM education, teacher training, web development, and technology-driven business operations.',
-    function: 'Abdul Rashid trains N2I learners in digital and web development skills, drawing on his background in IT operations, STEM education, and teacher training to make technology concepts practical and accessible.',
-  },
-  {
     id: 'juliana-naa-ode-hammond',
     name: 'Juliana Naa Ode Hammond',
     role: 'Student Success Coordinator',
     image: '/team/juliana-naa-ode-hammond.jpeg',
     background: 'Juliana is an IB educator and Information Professional with over five years of experience in education. She holds an MPhil and MA in Information Studies from the University of Ghana, with an academic and professional background that bridges information, technology, design thinking, research, and student development.',
     function: 'As a member of the student success team, Juliana helps create an inclusive, supportive environment where learners can move from discovering their potential to developing skills and creating meaningful impact.',
+  },
+  {
+    id: 'abdul-rashid-boyefio',
+    name: 'Abdul Rashid Boyefio',
+    role: 'Digital Skills Trainer',
+    image: '/team/abdul-rashid-boyefio.jpeg',
+    background: 'Abdul Rashid holds an NCC Education Level 4 Diploma in Business Information Technology and an NCC Education Level 5 Diploma in Computing with Business Management. He is also a Certified UNESCO Ethics Teacher Trainer, with professional experience spanning IT operations, digital learning, STEM education, teacher training, web development, and technology-driven business operations.',
+    function: 'Abdul Rashid trains N2I learners in digital and web development skills, drawing on his background in IT operations, STEM education, and teacher training to make technology concepts practical and accessible.',
   },
 ];
 
