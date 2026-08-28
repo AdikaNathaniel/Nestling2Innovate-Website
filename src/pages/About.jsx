@@ -236,6 +236,22 @@ export default function About() {
               <h3>Emmanuel Danquah</h3>
               <div className="role">Graphics Designer</div>
             </Reveal>
+
+            <Reveal variant="drop" delay={1.44} className="team-card">
+              <Link to="/team#abdul-rashid-boyefio">
+                <img src="/team/abdul-rashid-boyefio.jpeg" alt="Abdul Rashid Boyefio" />
+              </Link>
+              <h3>Abdul Rashid Boyefio</h3>
+              <div className="role">Digital Skills Trainer</div>
+            </Reveal>
+
+            <Reveal variant="drop" delay={1.56} className="team-card">
+              <Link to="/team#juliana-naa-ode-hammond">
+                <img src="/team/juliana-naa-ode-hammond.jpeg" alt="Juliana Naa Ode Hammond" />
+              </Link>
+              <h3>Juliana Naa Ode Hammond</h3>
+              <div className="role">Student Success Coordinator</div>
+            </Reveal>
           </div>
         </div>
       </section>
