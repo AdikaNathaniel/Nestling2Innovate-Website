@@ -122,6 +122,14 @@ const MEMBERS = [
     background: 'Abdul Rashid holds an NCC Education Level 4 Diploma in Business Information Technology and an NCC Education Level 5 Diploma in Computing with Business Management. He is also a Certified UNESCO Ethics Teacher Trainer, with professional experience spanning IT operations, digital learning, STEM education, teacher training, web development, and technology-driven business operations.',
     function: 'Abdul Rashid trains N2I learners in digital and web development skills, drawing on his background in IT operations, STEM education, and teacher training to make technology concepts practical and accessible.',
   },
+  {
+    id: 'helina-commey',
+    name: 'Helina Commey',
+    role: 'Administrator',
+    image: '/team/helina-commey.jpeg',
+    background: 'Helina is an aspiring Business Analytics professional and a graduate of the University of Ghana Business School, with a Bachelor of Science in Business Administration, majoring in Business Analytics. She is passionate about data analytics, data mining, and transforming raw data into meaningful insights, believing that data holds the potential to tell powerful stories, uncover opportunities, and drive meaningful change.',
+    function: "Helina is the programme's operational backbone, turning plans into smooth, well-run experiences for learners and partners alike. She brings structure to every stage of the learner journey, from application and selection through to onboarding and ongoing support, and builds the digital systems that keep information accurate and accessible. Known for her follow-through and attention to detail, she maintains clear communication across applicants, learners, and the wider team, ensuring nothing is left to chance and every deadline is met. Her calm, reliable approach makes her a valued partner to colleagues and collaborators.",
+  },
 ];
 
 export default function Team() {
