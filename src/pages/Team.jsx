@@ -130,6 +130,14 @@ const MEMBERS = [
     background: 'Helina is an aspiring Business Analytics professional and a graduate of the University of Ghana Business School, with a Bachelor of Science in Business Administration, majoring in Business Analytics. She is passionate about data analytics, data mining, and transforming raw data into meaningful insights, believing that data holds the potential to tell powerful stories, uncover opportunities, and drive meaningful change.',
     function: "Helina is the programme's operational backbone, turning plans into smooth, well-run experiences for learners and partners alike. She brings structure to every stage of the learner journey, from application and selection through to onboarding and ongoing support, and builds the digital systems that keep information accurate and accessible. Known for her follow-through and attention to detail, she maintains clear communication across applicants, learners, and the wider team, ensuring nothing is left to chance and every deadline is met. Her calm, reliable approach makes her a valued partner to colleagues and collaborators.",
   },
+  {
+    id: 'judah-birhanu-solomon',
+    name: 'Judah Birhanu Solomon',
+    role: 'Digital Skills Trainer',
+    image: '/team/judah-birhanu-solomon.jpeg',
+    background: "Judah holds a BSc in Computer Science from the University of the People (California, US) and a Learning Science certification from Carnegie Mellon University. An experienced STEAM Educator and Teacher Trainer, he serves as a STEAM Facilitator at Ghana International School, where he has mentored hundreds of young innovators to bring their ideas to life and coached the school's Robotics team to a 2nd-place finish in the AI for Good Robotics Competition. He also serves with MakersPlace to deliver practical technology education across Ghana.",
+    function: 'Adept in project-based learning methodologies, Agile Scrum, and the Engineering Design Process, Judah brings expertise in curriculum development, software engineering, and physical computing directly to learners. He guides students through the end-to-end design and development of tangible solutions to real-world problems.',
+  },
 ];
 
 export default function Team() {

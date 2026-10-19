@@ -260,6 +260,14 @@ export default function About() {
               <h3>Helina Commey</h3>
               <div className="role">Administrator</div>
             </Reveal>
+
+            <Reveal variant="drop" delay={1.8} className="team-card">
+              <Link to="/team#judah-birhanu-solomon">
+                <img src="/team/judah-birhanu-solomon.jpeg" alt="Judah Birhanu Solomon" />
+              </Link>
+              <h3>Judah Birhanu Solomon</h3>
+              <div className="role">Digital Skills Trainer</div>
+            </Reveal>
           </div>
         </div>
       </section>
