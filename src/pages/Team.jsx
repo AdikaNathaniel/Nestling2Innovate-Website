@@ -156,30 +156,37 @@ export default function Team() {
 
       <section id="team-profiles">
         <div className="container">
+          {/* Two independent columns (even indexes left, odd right) so a long profile
+              doesn't leave empty space under the shorter card beside it. */}
           <div className="team-profiles">
-            {MEMBERS.map((member, i) => (
-              <Reveal
-                as="div"
-                variant={i % 2 === 0 ? 'left' : 'right'}
-                delay={i * 0.1}
-                key={member.id}
-                id={member.id}
-                className="team-profile"
-              >
-                <div className="team-profile-image">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    style={member.imagePosition ? { objectPosition: member.imagePosition } : undefined}
-                  />
-                </div>
-                <div className="team-profile-content">
-                  <h2>{member.name}</h2>
-                  <div className="role">{member.role}</div>
-                  <p><strong>Background:</strong> {member.background}</p>
-                  <p><strong>Function at N2I:</strong> {member.function}</p>
-                </div>
-              </Reveal>
+            {[0, 1].map((col) => (
+              <div className="team-profiles-col" key={col}>
+                {MEMBERS.map((member, i) => i % 2 === col && (
+                  <Reveal
+                    as="div"
+                    variant={col === 0 ? 'left' : 'right'}
+                    delay={i * 0.1}
+                    key={member.id}
+                    id={member.id}
+                    className="team-profile"
+                    style={{ order: i }}
+                  >
+                    <div className="team-profile-image">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        style={member.imagePosition ? { objectPosition: member.imagePosition } : undefined}
+                      />
+                    </div>
+                    <div className="team-profile-content">
+                      <h2>{member.name}</h2>
+                      <div className="role">{member.role}</div>
+                      <p><strong>Background:</strong> {member.background}</p>
+                      <p><strong>Function at N2I:</strong> {member.function}</p>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
             ))}
           </div>
         </div>
