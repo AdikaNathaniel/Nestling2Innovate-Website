@@ -137,7 +137,7 @@ const MEMBERS = [
     image: '/team/mawunyo-kwasi-kutor.jpeg',
     column: 0, // left column, under Prince
     background: 'Mawunyo is an Information Technology professional, Software Engineer, and Digital Transformation Specialist with experience across software development, cybersecurity, cloud technologies, and AI.',
-    function: 'Mawunyo mentors and advises N2I participants throughout the program, with a special focus on grant and sponsorship initiatives.',
+    function: "As a Program Advisor, Mawunyo draws on his industry experience to guide N2I's technical direction, helping keep the curriculum aligned with current practice in software development, cybersecurity, cloud, and AI. He also lends strategic support to the initiative's grant and sponsorship efforts.",
   },
 ];
 
