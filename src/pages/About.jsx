@@ -166,35 +166,35 @@ export default function About() {
             </Reveal>
 
             <Reveal variant="drop" delay={0.36} className="team-card">
-              <Link to="/team#xornam-kumordzie">
-                <img src="/team/xornam-kumordzie.jpeg" alt="Xornam Kumordzie" />
-              </Link>
-              <h3>Xornam Kumordzie</h3>
-              <div className="role">Project Coordination and Learning Community Management</div>
-            </Reveal>
-
-            <Reveal variant="drop" delay={0.48} className="team-card">
-              <Link to="/team#prince-kweku-entsie">
-                <img src="/team/prince-kweku-entsie.jpeg" alt="Prince Kweku Entsie" />
-              </Link>
-              <h3>Prince Kweku Entsie</h3>
-              <div className="role">Program Advisor</div>
-            </Reveal>
-
-            <Reveal variant="drop" delay={0.6} className="team-card">
-              <Link to="/team#mawunyo-kwasi-kutor">
-                <img src="/team/mawunyo-kwasi-kutor.jpeg" alt="Mawunyo Kwasi Kutor" />
-              </Link>
-              <h3>Mawunyo Kwasi Kutor</h3>
-              <div className="role">Digital Skills Trainer</div>
-            </Reveal>
-
-            <Reveal variant="drop" delay={0.72} className="team-card">
               <Link to="/team#nathaniel-adika">
                 <img src="/team/nathaniel-adika.jpeg" alt="Nathaniel Adika" />
               </Link>
               <h3>Nathaniel Adika</h3>
               <div className="role">Digital Skills Trainer</div>
+            </Reveal>
+
+            <Reveal variant="drop" delay={0.48} className="team-card">
+              <Link to="/team#xornam-kumordzie">
+                <img src="/team/xornam-kumordzie.jpeg" alt="Xornam Kumordzie" />
+              </Link>
+              <h3>Xornam Kumordzie</h3>
+              <div className="role">Project Coordinator and Learning Community Manager</div>
+            </Reveal>
+
+            <Reveal variant="drop" delay={0.6} className="team-card">
+              <Link to="/team#helina-commey">
+                <img src="/team/helina-commey.jpeg" alt="Helina Commey" />
+              </Link>
+              <h3>Helina Commey</h3>
+              <div className="role">Administrator</div>
+            </Reveal>
+
+            <Reveal variant="drop" delay={0.72} className="team-card">
+              <Link to="/team#sandra-boakye-boaitey">
+                <img src="/team/sandra-boakye-boaitey.jpeg" alt="Sandra Boakye Boaitey" />
+              </Link>
+              <h3>Sandra Boakye Boaitey</h3>
+              <div className="role">Operations Manager</div>
             </Reveal>
 
             <Reveal variant="drop" delay={0.84} className="team-card">
@@ -214,14 +214,6 @@ export default function About() {
             </Reveal>
 
             <Reveal variant="drop" delay={1.08} className="team-card">
-              <Link to="/team#sandra-boakye-boaitey">
-                <img src="/team/sandra-boakye-boaitey.jpeg" alt="Sandra Boakye Boaitey" />
-              </Link>
-              <h3>Sandra Boakye Boaitey</h3>
-              <div className="role">Operations Manager</div>
-            </Reveal>
-
-            <Reveal variant="drop" delay={1.2} className="team-card">
               <Link to="/team#fredrick-stephanie">
                 <img src="/team/fredrick-stephanie.jpg" alt="Fredrick Stephanie" />
               </Link>
@@ -229,15 +221,7 @@ export default function About() {
               <div className="role">Graphics Designer and Website Developer</div>
             </Reveal>
 
-            <Reveal variant="drop" delay={1.32} className="team-card">
-              <Link to="/team#emmanuel-danquah">
-                <img src="/team/emmanuel-danquah.jpg" alt="Emmanuel Danquah" />
-              </Link>
-              <h3>Emmanuel Danquah</h3>
-              <div className="role">Graphics Designer</div>
-            </Reveal>
-
-            <Reveal variant="drop" delay={1.44} className="team-card">
+            <Reveal variant="drop" delay={1.2} className="team-card">
               <Link to="/team#juliana-naa-ode-hammond">
                 <img src="/team/juliana-naa-ode-hammond.jpeg" alt="Juliana Naa Ode Hammond" />
               </Link>
@@ -245,7 +229,7 @@ export default function About() {
               <div className="role">Student Success Coordinator</div>
             </Reveal>
 
-            <Reveal variant="drop" delay={1.56} className="team-card">
+            <Reveal variant="drop" delay={1.32} className="team-card">
               <Link to="/team#abdul-rashid-boyefio">
                 <img src="/team/abdul-rashid-boyefio.jpeg" alt="Abdul Rashid Boyefio" />
               </Link>
@@ -253,20 +237,36 @@ export default function About() {
               <div className="role">Digital Skills Trainer</div>
             </Reveal>
 
-            <Reveal variant="drop" delay={1.68} className="team-card">
-              <Link to="/team#helina-commey">
-                <img src="/team/helina-commey.jpeg" alt="Helina Commey" />
-              </Link>
-              <h3>Helina Commey</h3>
-              <div className="role">Administrator</div>
-            </Reveal>
-
-            <Reveal variant="drop" delay={1.8} className="team-card">
+            <Reveal variant="drop" delay={1.44} className="team-card">
               <Link to="/team#judah-birhanu-solomon">
                 <img src="/team/judah-birhanu-solomon.jpeg" alt="Judah Birhanu Solomon" />
               </Link>
               <h3>Judah Birhanu Solomon</h3>
               <div className="role">Digital Skills Trainer</div>
+            </Reveal>
+
+            <Reveal variant="drop" delay={1.56} className="team-card">
+              <Link to="/team#irene-obeng">
+                <img src="/team/irene-obeng.jpeg" alt="Irene Obeng" />
+              </Link>
+              <h3>Irene Obeng</h3>
+              <div className="role">Programme Coordinator – Media Team</div>
+            </Reveal>
+
+            <Reveal variant="drop" delay={1.68} className="team-card">
+              <Link to="/team#prince-kweku-entsie">
+                <img src="/team/prince-kweku-entsie.jpeg" alt="Prince Kweku Entsie" />
+              </Link>
+              <h3>Prince Kweku Entsie</h3>
+              <div className="role">Program Advisor</div>
+            </Reveal>
+
+            <Reveal variant="drop" delay={1.8} className="team-card">
+              <Link to="/team#mawunyo-kwasi-kutor">
+                <img src="/team/mawunyo-kwasi-kutor.jpeg" alt="Mawunyo Kwasi Kutor" />
+              </Link>
+              <h3>Mawunyo Kwasi Kutor</h3>
+              <div className="role">Program Advisor</div>
             </Reveal>
           </div>
         </div>
