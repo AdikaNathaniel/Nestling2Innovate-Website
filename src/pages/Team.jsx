@@ -135,6 +135,7 @@ const MEMBERS = [
     name: 'Mawunyo Kwasi Kutor',
     role: 'Program Advisor',
     image: '/team/mawunyo-kwasi-kutor.jpeg',
+    column: 0, // left column, under Prince
     background: 'Mawunyo is an Information Technology professional, Software Engineer, and Digital Transformation Specialist with experience across software development, cybersecurity, cloud technologies, and AI.',
     function: 'Mawunyo mentors and advises N2I participants throughout the program, with a special focus on grant and sponsorship initiatives.',
   },
@@ -156,12 +157,12 @@ export default function Team() {
 
       <section id="team-profiles">
         <div className="container">
-          {/* Two independent columns (even indexes left, odd right) so a long profile
-              doesn't leave empty space under the shorter card beside it. */}
+          {/* Two independent columns (even indexes left, odd right, unless a member sets
+              `column`) so a long profile doesn't leave empty space under the shorter card beside it. */}
           <div className="team-profiles">
             {[0, 1].map((col) => (
               <div className="team-profiles-col" key={col}>
-                {MEMBERS.map((member, i) => i % 2 === col && (
+                {MEMBERS.map((member, i) => (member.column ?? i % 2) === col && (
                   <Reveal
                     as="div"
                     variant={col === 0 ? 'left' : 'right'}
