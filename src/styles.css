@@ -441,57 +441,136 @@ p { color: var(--text-light); }
 .stat-strip .lbl { font-size: 0.85rem; color: var(--text-light); font-weight: 600; }
 
 /* ---------- Impact programme breakdown (from the impact report flyer) ---------- */
-.programme-table {
+/* Programme cards (Impact page) */
+@property --pct {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+.programme-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.programme-card {
+  --track: var(--primary);
+  --track-tint: var(--tint);
+  --girls: #f5a623;
+  --boys: var(--primary);
+  --done: #1f9d63;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 8px 28px 18px;
+  padding: 26px 28px 24px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease var(--delay), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1) var(--delay), box-shadow 0.25s ease;
 }
-.programme-row {
-  display: grid;
-  grid-template-columns: 2.2fr 0.6fr 1.5fr 1.3fr;
-  gap: 24px;
+.programme-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 5px;
+  background: var(--track);
+}
+.programme-card.is-visible { opacity: 1; transform: none; }
+.programme-card.is-visible:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(0, 118, 144, 0.18); }
+.programme-card.track-coding { --track: #3a5bd9; --track-tint: #ebefff; }
+.programme-card.track-ai { --track: #8a4fd8; --track-tint: #f3ecff; }
+
+.programme-card-head {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 18px 0;
-  border-bottom: 1px solid var(--border);
+  margin-bottom: 14px;
 }
-.programme-name h3 { font-size: 1.05rem; margin-bottom: 2px; }
-.programme-name span,
-.programme-learners span,
-.programme-gender > span,
-.programme-completed span { font-size: 0.85rem; color: var(--text-light); }
-.programme-learners { text-align: center; }
-.programme-learners strong { display: block; font-size: 1.6rem; line-height: 1.1; }
-.programme-completed strong { font-size: 1.25rem; }
-.gender-bar, .completion-bar {
+.track-pill {
+  background: var(--track-tint);
+  color: var(--track);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+.programme-year { font-size: 0.85rem; font-weight: 600; color: var(--text-light); }
+.programme-card h3 { font-size: 1.15rem; line-height: 1.3; margin-bottom: 2px; }
+.programme-cohort { font-size: 0.9rem; color: var(--text-light); margin-bottom: 20px; }
+
+.programme-card-body {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 18px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 18px;
+  margin-top: auto;
+}
+.completion-ring {
+  flex: none;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: conic-gradient(var(--done) calc(var(--pct) * 1%), var(--tint-2) 0);
+  transition: --pct 1.2s cubic-bezier(0.22, 1, 0.36, 1) calc(var(--delay) + 0.2s);
+}
+.completion-ring span {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--white);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text);
+}
+.programme-figures { font-size: 0.95rem; color: var(--text-light); line-height: 1.5; }
+.programme-figures strong { font-size: 1.6rem; color: var(--text); margin-right: 4px; }
+
+.gender-bar {
   display: flex;
   gap: 3px;
   height: 10px;
   border-radius: 999px;
   overflow: hidden;
   background: var(--tint-2);
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
-.completion-bar { margin: 6px 0 0; height: 8px; }
-.gender-bar .girls, .programme-legend .girls { background: #f5a623; }
-.gender-bar .boys, .programme-legend .boys { background: var(--primary); }
-.completion-bar span { background: #1f9d63; border-radius: 999px; }
-.programme-legend {
+.gender-bar span {
+  border-radius: 999px;
+  transition: width 1s cubic-bezier(0.22, 1, 0.36, 1) calc(var(--delay) + 0.3s);
+}
+.gender-bar .girls { background: var(--girls); }
+.gender-bar .boys { background: var(--boys); }
+.gender-labels {
   display: flex;
-  gap: 18px;
-  justify-content: flex-end;
-  padding-top: 12px;
-  font-size: 0.8rem;
+  justify-content: space-between;
+  font-size: 0.85rem;
   color: var(--text-light);
 }
-.programme-legend i {
+.gender-labels i {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   margin-right: 6px;
   vertical-align: middle;
+}
+.gender-labels .girls { background: var(--girls); }
+.gender-labels .boys { background: var(--boys); }
+
+@media (prefers-reduced-motion: reduce) {
+  .programme-card, .completion-ring, .gender-bar span { transition: none; }
 }
 .internship-logos {
   margin-top: 28px;
@@ -804,9 +883,8 @@ p { color: var(--text-light); }
   .split img { height: 300px; }
   .split.reverse { direction: ltr; }
   .news-grid { grid-template-columns: 1fr; }
-  .programme-table { padding: 4px 18px 14px; }
-  .programme-row { grid-template-columns: 1fr auto; gap: 12px 16px; }
-  .programme-gender, .programme-completed { grid-column: 1 / -1; }
+  .programme-grid { grid-template-columns: 1fr; }
+  .programme-card { padding: 22px 20px 20px; }
   .internship-logos { padding: 18px 0; }
   .internship-logos-text { padding: 0 18px 12px; }
   .logo-marquee .marquee-group { gap: 32px; padding-right: 32px; }

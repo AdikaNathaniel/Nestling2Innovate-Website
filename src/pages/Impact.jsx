@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Reveal from '../components/Reveal.jsx';
+import useReveal from '../hooks/useReveal.js';
 import StatNumber from '../components/StatNumber.jsx';
 import Marquee from '../components/Marquee.jsx';
 import HeroSlideshow from '../components/HeroSlideshow.jsx';
@@ -76,34 +77,51 @@ const TOTAL_GIRLS = PROGRAMMES.reduce((sum, p) => sum + p.girls, 0);
 const TOTAL_CERTIFICATES = PROGRAMMES.reduce((sum, p) => sum + p.completed, 0);
 const percent = (part, whole) => Math.round((part / whole) * 100);
 
-function ProgrammeRow({ p }) {
+// Track colours for the programme cards.
+const TRACK_CLASS = { 'Web development': 'web', Coding: 'coding', 'AI/ML': 'ai' };
+
+function ProgrammeCard({ p, delay }) {
+  const [ref, visible] = useReveal(0.25);
   const learners = p.girls + p.boys;
   const done = percent(p.completed, learners);
+  const [title, cohort] = p.name.split(' · ');
+  const [track, year] = p.meta.split(' · ');
   return (
-    <div className="programme-row">
-      <div className="programme-name">
-        <h3>{p.name}</h3>
-        <span>{p.meta}</span>
+    <div
+      ref={ref}
+      className={`programme-card track-${TRACK_CLASS[track] || 'web'}${visible ? ' is-visible' : ''}`}
+      style={{ '--delay': `${delay}s` }}
+    >
+      <div className="programme-card-head">
+        <span className="track-pill">{track}</span>
+        <span className="programme-year">{year}</span>
       </div>
-      <div className="programme-learners">
-        <strong>{learners}</strong>
-        <span>learners</span>
+      <h3>{title}</h3>
+      <div className="programme-cohort">{cohort || ' '}</div>
+
+      <div className="programme-card-body">
+        <div
+          className="completion-ring"
+          style={{ '--pct': visible ? done : 0 }}
+          role="img"
+          aria-label={`${done}% completed`}
+        >
+          <span>{done}%</span>
+        </div>
+        <div className="programme-figures">
+          <div><strong>{learners}</strong> learners</div>
+          <div><strong>{p.completed}</strong> of {learners} completed</div>
+        </div>
       </div>
+
       <div className="programme-gender">
         <div className="gender-bar" aria-hidden="true">
-          <span className="girls" style={{ width: `${percent(p.girls, learners)}%` }}></span>
-          <span className="boys" style={{ width: `${percent(p.boys, learners)}%` }}></span>
+          <span className="girls" style={{ width: visible ? `${percent(p.girls, learners)}%` : 0 }}></span>
+          <span className="boys" style={{ width: visible ? `${percent(p.boys, learners)}%` : 0 }}></span>
         </div>
-        <span>
-          {p.girls} {p.girls === 1 ? 'girl' : 'girls'} &middot; {p.boys} {p.boys === 1 ? 'boy' : 'boys'}
-        </span>
-      </div>
-      <div className="programme-completed">
-        <div>
-          <strong>{p.completed}/{learners}</strong> <span>{done}% completed</span>
-        </div>
-        <div className="completion-bar" aria-hidden="true">
-          <span style={{ width: `${done}%` }}></span>
+        <div className="gender-labels">
+          <span><i className="girls"></i>{p.girls} {p.girls === 1 ? 'girl' : 'girls'}</span>
+          <span><i className="boys"></i>{p.boys} {p.boys === 1 ? 'boy' : 'boys'}</span>
         </div>
       </div>
     </div>
@@ -198,15 +216,11 @@ export default function Impact() {
             </p>
           </div>
 
-          <Reveal variant="drop" className="programme-table">
-            {PROGRAMMES.map((p) => (
-              <ProgrammeRow p={p} key={p.name} />
+          <div className="programme-grid">
+            {PROGRAMMES.map((p, i) => (
+              <ProgrammeCard p={p} key={p.name} delay={i * 0.1} />
             ))}
-            <div className="programme-legend" aria-hidden="true">
-              <span><i className="girls"></i>Girls</span>
-              <span><i className="boys"></i>Boys</span>
-            </div>
-          </Reveal>
+          </div>
 
           <Reveal variant="drop" delay={0.1} className="internship-logos">
             <div className="internship-logos-text">
