@@ -44,6 +44,72 @@ const TESTIMONIALS = [
   },
 ];
 
+// From the N2I Impact Report flyer, June 2025 – August 2026.
+const PROGRAMMES = [
+  { name: 'Responsive Web Design', meta: 'Web development · 2025', girls: 2, boys: 0, completed: 2 },
+  { name: 'Deloitte Switzerland × SuaCode', meta: 'Coding · 2025', girls: 2, boys: 4, completed: 1 },
+  { name: 'Google Gemini Certificate (K12) · Cohort 1', meta: 'AI/ML · 2026', girls: 5, boys: 1, completed: 5 },
+  { name: 'Google Gemini Certificate (K12) · Cohort 2', meta: 'AI/ML · 2026', girls: 3, boys: 6, completed: 9 },
+];
+
+// Virtual internship & job simulation partners, cropped from the impact flyer.
+const PARTNERS = [
+  ['mastercard', 'Mastercard'],
+  ['bny', 'BNY'],
+  ['deloitte', 'Deloitte'],
+  ['siemens', 'Siemens'],
+  ['red-bull', 'Red Bull'],
+  ['datacom', 'Datacom'],
+  ['skyscanner', 'Skyscanner'],
+  ['bloomberg', 'Bloomberg'],
+  ['ea', 'EA'],
+  ['accenture', 'Accenture'],
+  ['pfizer', 'Pfizer'],
+  ['cbre', 'CBRE'],
+  ['third-bridge', 'Third Bridge'],
+  ['city-century', 'City Century'],
+  ['bcg', 'Boston Consulting Group'],
+];
+
+const TOTAL_LEARNERS = PROGRAMMES.reduce((sum, p) => sum + p.girls + p.boys, 0);
+const TOTAL_GIRLS = PROGRAMMES.reduce((sum, p) => sum + p.girls, 0);
+const TOTAL_CERTIFICATES = PROGRAMMES.reduce((sum, p) => sum + p.completed, 0);
+const percent = (part, whole) => Math.round((part / whole) * 100);
+
+function ProgrammeRow({ p }) {
+  const learners = p.girls + p.boys;
+  const done = percent(p.completed, learners);
+  return (
+    <div className="programme-row">
+      <div className="programme-name">
+        <h3>{p.name}</h3>
+        <span>{p.meta}</span>
+      </div>
+      <div className="programme-learners">
+        <strong>{learners}</strong>
+        <span>learners</span>
+      </div>
+      <div className="programme-gender">
+        <div className="gender-bar" aria-hidden="true">
+          <span className="girls" style={{ width: `${percent(p.girls, learners)}%` }}></span>
+          <span className="boys" style={{ width: `${percent(p.boys, learners)}%` }}></span>
+        </div>
+        <span>
+          {p.girls} {p.girls === 1 ? 'girl' : 'girls'} &middot; {p.boys} {p.boys === 1 ? 'boy' : 'boys'}
+        </span>
+      </div>
+      <div className="programme-completed">
+        <div>
+          <strong>{p.completed}/{learners}</strong> <span>{done}% completed</span>
+        </div>
+        <div className="completion-bar" aria-hidden="true">
+          <span style={{ width: `${done}%` }}></span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function TestimonialCard({ t }) {
   return (
     <div className="quote-card marquee-card">
@@ -76,20 +142,20 @@ export default function Impact() {
       <section className="stat-strip" id="impact">
         <div className="container grid grid-4">
           <div>
-            <StatNumber target={18} />
+            <StatNumber target={TOTAL_LEARNERS} />
             <span className="lbl">Learners Served</span>
           </div>
           <div>
-            <StatNumber target={4} />
-            <span className="lbl">Proof-of-Concept Programs</span>
+            <StatNumber target={PROGRAMMES.length} />
+            <span className="lbl">Programmes Delivered</span>
           </div>
           <div>
             <span className="num">Early</span>
             <span className="lbl">Among Ghana's First Gemini AI Certified K12 Students</span>
           </div>
           <div>
-            <span className="num">Upcoming</span>
-            <span className="lbl">New Programs Coming Soon</span>
+            <StatNumber target={TOTAL_CERTIFICATES} />
+            <span className="lbl">Certificates Earned</span>
           </div>
         </div>
       </section>
@@ -100,9 +166,10 @@ export default function Impact() {
             <span className="eyebrow">Our Impact</span>
             <h2>A Milestone Worth Building On</h2>
             <p>
-              Since 2025, N2I has run four proof-of-concept programs — Web Design, Global Virtual
-              Internships, Programming, and AI Literacy — reaching 18 learners at the Special Grace
-              Academy campus and extending into neighbouring schools.
+              Between June 2025 and August 2026, with no team and no external funding, N2I delivered
+              four programmes in web development, coding and AI/ML, reaching {TOTAL_LEARNERS} learners
+              at the Special Grace Academy campus and neighbouring schools. {TOTAL_CERTIFICATES} certificates
+              were earned, and learners also completed global virtual internships and job simulations.
             </p>
             <p>
               The clearest signal that this model works: N2I produced one of the first{' '}
@@ -115,6 +182,45 @@ export default function Impact() {
           <Reveal as="img" variant="right" delay={0.1}
             src="/images/impact-team-high-five.jpg"
             alt="Learners and mentors celebrating success together" />
+        </div>
+      </section>
+
+      <section id="programmes">
+        <div className="container">
+          <div className="section-head">
+            <Reveal as="span" variant="slide-left" className="eyebrow">Impact Report &middot; June 2025 – August 2026</Reveal>
+            <Reveal as="h2" variant="slide-right" delay={0.08}>
+              {TOTAL_LEARNERS} Learners. Zero Funding.
+            </Reveal>
+            <p>
+              {percent(TOTAL_CERTIFICATES, TOTAL_LEARNERS)}% completion rate &middot;{' '}
+              {percent(TOTAL_GIRLS, TOTAL_LEARNERS)}% girls ({TOTAL_GIRLS} of {TOTAL_LEARNERS})
+            </p>
+          </div>
+
+          <Reveal variant="drop" className="programme-table">
+            {PROGRAMMES.map((p) => (
+              <ProgrammeRow p={p} key={p.name} />
+            ))}
+            <div className="programme-legend" aria-hidden="true">
+              <span><i className="girls"></i>Girls</span>
+              <span><i className="boys"></i>Boys</span>
+            </div>
+          </Reveal>
+
+          <Reveal variant="drop" delay={0.1} className="internship-logos">
+            <div className="internship-logos-text">
+              <span className="eyebrow">Virtual Internships &amp; Job Simulations</span>
+              <p>Completed by N2I learners in 2025</p>
+            </div>
+            <Marquee duration={35} className="logo-marquee">
+              {PARTNERS.map(([file, name]) => (
+                <div className="logo-tile" key={file}>
+                  <img src={`/images/partners/${file}.png`} alt={name} loading="lazy" />
+                </div>
+              ))}
+            </Marquee>
+          </Reveal>
         </div>
       </section>
 
@@ -203,7 +309,7 @@ export default function Impact() {
           <div className="overlay"></div>
           <div className="inner">
             <h2>Be Part of the Next Chapter</h2>
-            <p>From pilot to permanent — help us take this model further.</p>
+            <p>This is what we built with nothing. Imagine it with you.</p>
             <div className="hero-actions">
               <Link to="/get-involved#donate" className="btn btn-primary">Donate</Link>
               <Link to="/get-involved#partner" className="btn btn-outline">Partner With Us</Link>

@@ -440,6 +440,82 @@ p { color: var(--text-light); }
 .stat-strip .num { font-size: 2.2rem; font-weight: 800; color: var(--primary); display: block; }
 .stat-strip .lbl { font-size: 0.85rem; color: var(--text-light); font-weight: 600; }
 
+/* ---------- Impact programme breakdown (from the impact report flyer) ---------- */
+.programme-table {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 8px 28px 18px;
+}
+.programme-row {
+  display: grid;
+  grid-template-columns: 2.2fr 0.6fr 1.5fr 1.3fr;
+  gap: 24px;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+.programme-name h3 { font-size: 1.05rem; margin-bottom: 2px; }
+.programme-name span,
+.programme-learners span,
+.programme-gender > span,
+.programme-completed span { font-size: 0.85rem; color: var(--text-light); }
+.programme-learners { text-align: center; }
+.programme-learners strong { display: block; font-size: 1.6rem; line-height: 1.1; }
+.programme-completed strong { font-size: 1.25rem; }
+.gender-bar, .completion-bar {
+  display: flex;
+  gap: 3px;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--tint-2);
+  margin-bottom: 6px;
+}
+.completion-bar { margin: 6px 0 0; height: 8px; }
+.gender-bar .girls, .programme-legend .girls { background: #f5a623; }
+.gender-bar .boys, .programme-legend .boys { background: var(--primary); }
+.completion-bar span { background: #1f9d63; border-radius: 999px; }
+.programme-legend {
+  display: flex;
+  gap: 18px;
+  justify-content: flex-end;
+  padding-top: 12px;
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+.programme-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.internship-logos {
+  margin-top: 28px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 0;
+}
+.internship-logos-text { padding: 0 28px 16px; text-align: center; }
+.internship-logos-text p { margin-top: 6px; color: var(--text-light); }
+/* Fade the logos in and out at the edges so the loop has no hard cut-off. */
+.logo-marquee {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+.logo-marquee .marquee-group { align-items: center; gap: 48px; padding-right: 48px; }
+.logo-tile {
+  flex-shrink: 0;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+.logo-tile img { max-height: 64px; max-width: 180px; width: auto; height: auto; display: block; }
+
 /* ---------- Tint / colored sections ---------- */
 .section-tint { background: var(--tint); }
 .section-dark {
@@ -728,6 +804,13 @@ p { color: var(--text-light); }
   .split img { height: 300px; }
   .split.reverse { direction: ltr; }
   .news-grid { grid-template-columns: 1fr; }
+  .programme-table { padding: 4px 18px 14px; }
+  .programme-row { grid-template-columns: 1fr auto; gap: 12px 16px; }
+  .programme-gender, .programme-completed { grid-column: 1 / -1; }
+  .internship-logos { padding: 18px 0; }
+  .internship-logos-text { padding: 0 18px 12px; }
+  .logo-marquee .marquee-group { gap: 32px; padding-right: 32px; }
+  .logo-tile img { max-height: 52px; max-width: 140px; }
 }
 
 @media (max-width: 480px) {
