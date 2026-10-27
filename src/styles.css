@@ -471,13 +471,6 @@ p { color: var(--text-light); }
   transform: translateY(24px);
   transition: opacity 0.6s ease var(--delay), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1) var(--delay), box-shadow 0.25s ease;
 }
-.programme-card::before {
-  content: '';
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 5px;
-  background: var(--track);
-}
 .programme-card.is-visible { opacity: 1; transform: none; }
 .programme-card.is-visible:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(0, 118, 144, 0.18); }
 .programme-card.track-coding { --track: #3a5bd9; --track-tint: #ebefff; }
