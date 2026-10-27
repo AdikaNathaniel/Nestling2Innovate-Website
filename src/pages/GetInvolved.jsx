@@ -4,6 +4,18 @@ import Reveal from '../components/Reveal.jsx';
 import HeroSlideshow from '../components/HeroSlideshow.jsx';
 import TypewriterHeading from '../components/TypewriterHeading.jsx';
 
+const PARTNER_LOGOS = [
+  ['thunderbird', 'Thunderbird School of Global Management'],
+  ['asu', 'Arizona State University'],
+  ['100-million-learners', 'Najafi 100 Million Learners Global Initiative'],
+];
+
+const PATHWAYS = [
+  { level: 'Foundational', courses: 2, text: 'For learners with limited time, confidence or prior exposure. An introduction to core entrepreneurship and business concepts.' },
+  { level: 'Intermediate', courses: 5, text: 'Apply entrepreneurship and leadership concepts more deeply, with the option to earn undergraduate credit.' },
+  { level: 'Advanced', courses: 5, text: "Leadership, management and strategic capabilities, with academic credit toward a master's degree." },
+];
+
 const GET_INVOLVED_HEADLINES = [
   'Three Ways to Move This Mission Forward',
   'Learn, Mentor, or Partner With Us',
@@ -125,6 +137,53 @@ export default function GetInvolved() {
               in-kind support such as devices, connectivity, and curriculum expertise.
             </p>
             <a href="mailto:info@nestling2innovate.org?subject=Partnership%20Inquiry" className="btn btn-outline-dark">Start a Partnership Conversation</a>
+          </Reveal>
+        </div>
+
+        {/* From the N2I × Najafi 100 Million Learners partnership flyer. */}
+        <div className="container">
+          <Reveal variant="drop" className="partner-announcement">
+            <div className="partner-announcement-head">
+              <span className="eyebrow">Partnership Announcement</span>
+              <h3>World-class learning, free. From nest to flight.</h3>
+              <p>
+                Nestling 2Innovate Initiative, a program of the Baiden Etsiakoh Eagle Vision Foundation,
+                is now an official outreach partner of the <strong>Najafi 100 Million Learners Global
+                Initiative</strong> at Thunderbird School of Global Management, Arizona State University.
+              </p>
+            </div>
+
+            <div className="partner-announcement-logos">
+              {PARTNER_LOGOS.map(([file, name]) => (
+                <img key={file} src={`/images/partners/${file}.png`} alt={name} loading="lazy" />
+              ))}
+            </div>
+
+            <div className="partner-announcement-body">
+              <span className="eyebrow">Three Learning Pathways</span>
+              <div className="pathways">
+                {PATHWAYS.map((p) => (
+                  <div className={`pathway pathway-${p.level.toLowerCase()}`} key={p.level}>
+                    <div className="pathway-title">
+                      <h4>{p.level}</h4>
+                      <span>{p.courses} courses</span>
+                    </div>
+                    <p>{p.text}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="partner-announcement-cta">
+                <div>
+                  <span className="eyebrow">Start Learning Free</span>
+                  <p>
+                    Self-paced and online, in up to 40 languages. A digital badge and certificate for
+                    every course you complete.
+                  </p>
+                </div>
+                <a href="https://bit.ly/3Wwq63t" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Enroll for Free</a>
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>

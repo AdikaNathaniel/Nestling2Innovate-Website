@@ -565,6 +565,76 @@ p { color: var(--text-light); }
 @media (prefers-reduced-motion: reduce) {
   .programme-card, .completion-ring, .gender-bar span { transition: none; }
 }
+
+/* Partnership announcement (Get Involved → Partner With Us) */
+.partner-announcement {
+  margin-top: 56px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.partner-announcement-head {
+  background: linear-gradient(135deg, #0b2d5b, var(--primary-dark));
+  color: var(--white);
+  padding: 40px 44px;
+}
+.partner-announcement-head .eyebrow { color: #f5b82e; }
+.partner-announcement-head h3 { font-size: 2rem; line-height: 1.2; margin: 8px 0 14px; color: var(--white); }
+.partner-announcement-head p { color: rgba(255, 255, 255, 0.88); max-width: 820px; margin: 0; }
+.partner-announcement-head strong { color: var(--white); }
+.partner-announcement-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px 48px;
+  padding: 26px 44px;
+  border-bottom: 1px solid var(--border);
+}
+.partner-announcement-logos img { height: 44px; width: auto; max-width: 100%; }
+.partner-announcement-body { padding: 34px 44px 40px; }
+.pathways {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin: 16px 0 32px;
+}
+.pathway { --level: var(--primary); border-top: 4px solid var(--level); padding-top: 16px; }
+.pathway-intermediate { --level: #f5b82e; }
+.pathway-advanced { --level: #6b8e23; }
+.pathway-title { display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px; }
+.pathway-title h4 { font-size: 1.2rem; }
+.pathway-title span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--level);
+}
+.pathway p { color: var(--text-light); font-size: 0.95rem; margin: 0; }
+.partner-announcement-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: var(--tint);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+}
+.partner-announcement-cta p { margin: 6px 0 0; color: var(--text-light); }
+.partner-announcement-cta .btn { flex: none; }
+
+@media (max-width: 760px) {
+  .partner-announcement-head, .partner-announcement-body { padding-left: 22px; padding-right: 22px; }
+  .partner-announcement-head h3 { font-size: 1.5rem; }
+  .partner-announcement-logos { padding: 22px; gap: 20px 32px; }
+  .partner-announcement-logos img { height: 36px; }
+  .pathways { grid-template-columns: 1fr; }
+  .partner-announcement-cta { flex-direction: column; align-items: flex-start; }
+}
+
 .internship-logos {
   margin-top: 28px;
   background: var(--white);
