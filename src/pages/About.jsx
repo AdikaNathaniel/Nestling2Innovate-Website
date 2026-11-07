@@ -183,7 +183,7 @@ export default function About() {
 
             <Reveal variant="drop" delay={0.6} className="team-card">
               <Link to="/team#helina-commey">
-                <img src="/team/helina-commey.jpeg" alt="Helina Commey" />
+                <img src="/team/helina-commey.jpeg" alt="Helina Commey" style={{ objectPosition: 'center 20%' }} />
               </Link>
               <h3>Helina Commey</h3>
               <div className="role">Administrator</div>
